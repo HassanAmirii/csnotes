@@ -4,8 +4,9 @@ Thank you for helping improve this repository. Follow these rules to keep everyt
 
 1. **File format**
 
-   - All notes must be `.html` files.
-   - Place them under the `/notes` directory.
+- Place your note under the correct level folder: /notes/100-level, /notes/200-level, etc.
+- Add your note link to index.html under the corresponding level section.
+- Include author credit in both index.html and inside the note file.
 
 2. **Style**
 
@@ -21,13 +22,19 @@ Thank you for helping improve this repository. Follow these rules to keep everyt
      ```
    - Ensure filenames are descriptive and lowercase with hyphens.
 
-4. **Index linking**
+4. **Index linking & Author credit**
 
-   - Add your note link to `index.html` in the correct order:
+   - Add your note link to `index.html` in the correct order and include your name for credit:
      ```html
      <li>
-       Day 2 – Lecture 4: Arrays <a href="notes/day2-arrays.html">Read</a>
+       Day 2 – Lecture 4: Arrays
+       <a href="notes/day2-arrays.html">Read</a>
+       <small>by YourName</small>
      </li>
+     ```
+   - Inside each note file, include an author line directly under the title:
+     ```html
+     <p><em>Author: YourName</em></p>
      ```
 
 5. **Commit message**
@@ -41,21 +48,6 @@ Thank you for helping improve this repository. Follow these rules to keep everyt
 6. **Resources**
 
    - If you have helpful external references, put them in `/resources` and link from the note or index.
-
-7. **Author credit**
-   - please give yourself credit !
-   - In `index.html`, every note entry must include contributor credit in this form:
-     ```html
-     <li>
-       Day 2 – Lecture 2: Data Types
-       <a href="notes/day2-datatypes.html">Read</a>
-       <small>by ContributorName</small>
-     </li>
-     ```
-   - Inside each note file, include an author line directly under the title:
-     ```html
-     <p><em>Author: ContributorName</em></p>
-     ```
 
 ---
 

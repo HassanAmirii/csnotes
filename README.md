@@ -13,7 +13,7 @@ No inline CSS, no JavaScript.
 
 ## Demo
 
-👉 [View the notes online](https://your-username.github.io/cs-notes/)
+👉 [View the notes online](https://kwasucsnotes.pages.dev/)
 
 ## Structure
 
