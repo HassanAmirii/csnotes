@@ -44,7 +44,30 @@ Thank you for helping improve this repository. Follow these rules to keep everyt
      add:  notes on arrays
      fix: typo in lecture3
      ```
+6. **Template**
 
+  - Here is the standard template for writing a note:
+  ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day 1 – Introduction to Computer Science</title>
+<!-- Minified version -->
+<link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+
+<!-- Un-minified version -->
+<link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.css"> </head>
+  <body>
+    <p><a href="../index.html">← Back to Home</a></p>
+
+    <h1>Day 1 – Introduction to Computer Science</h1>
+    <p><em>Author: Hassan2bit</em></p>
+</body>
+</html>
+
+
+  ```
 6. **Resources**
 
    - If you have helpful external references, put them in `/resources` and link from the note or index.
