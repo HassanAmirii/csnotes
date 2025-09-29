@@ -4,15 +4,15 @@ Thank you for helping improve this repository. Follow these rules to keep everyt
 
 1. **File format**
 
-- Place your note under the correct level folder: /notes/100-level, /notes/200-level, etc.
-- Add your note link to index.html under the corresponding level section.
+- Place your note under the correct level folder: /notes/<your note>.html.
+- Add your note link to index.html under the Table of contents section.
 - Include author credit in both index.html and inside the note file.
 
 2. **Style**
 
    - Do not add CSS or JS.
    - Only semantic HTML (`<h1>`, `<p>`, `<ul>`, `<code>`, etc).
-   - Water.css is already linked for styling.
+   - simple.css is already linked for styling.
 
 3. **Navigation**
 
@@ -27,12 +27,12 @@ Thank you for helping improve this repository. Follow these rules to keep everyt
    - Add your note link to `index.html` in the correct order and include your name for credit:
      ```html
      <li>
-       Day 2 – Lecture 4: Arrays
-       <a href="notes/day2-arrays.html">Read</a>
+       < you topic name >
+       <a href="notes/<your topic name>.html">Read</a>
        <small>by YourName</small>
      </li>
      ```
-   - Inside each note file, include an author line directly under the title:
+   - Inside each note file, include an author line directly under the title of your note:
      ```html
      <p><em>Author: YourName</em></p>
      ```
@@ -41,7 +41,7 @@ Thank you for helping improve this repository. Follow these rules to keep everyt
 
    - Be descriptive:
      ```
-     add: day2 lecture4 notes on arrays
+     add:  notes on arrays
      fix: typo in lecture3
      ```
 

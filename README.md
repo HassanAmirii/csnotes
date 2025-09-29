@@ -8,7 +8,7 @@ Purpose:
 - Let students read quick digests on any device without distraction
 - Encourage open contributions and collaboration
 
-All notes are plain **HTML** files, styled automatically with [water.css](https://watercss.kognise.dev/).  
+All notes are plain **HTML** files, styled automatically with [simple.css](https://cdn.simplecss.org/simple.css).  
 No inline CSS, no JavaScript.
 
 ## Demo
