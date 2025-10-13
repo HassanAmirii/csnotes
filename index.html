@@ -1,95 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CS Notes Overview</title>
-    <!-- Minified version -->
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
-
-    <!-- Un-Minified version -->
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100-Level CS Student Resources</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <section
-        style="text-align: center; margin-top: 2em; padding: 1em"
-        id="overview"
-      >
-        <h1>KWASU CS NOTES</h1>
-
+    <main class="container">
+      <header>
+        <h2>Computer Science 100-Level Resource Hub</h2>
         <p>
-          Want to contribute your knowledge?
-          <a href="https://github.com/HassanAmirii/csnotes" target="_blank"
-            >GitHub</a
+          A curated collection of study materials and outlines for first-year
+          students at KWASU.
+        </p>
+        <p>
+          Managed by
+          <a
+            href="https://hassanamirii.github.io/"
+            target="_blank"
+            class="owner-link"
+            >Hassan2bit</a
           >
         </p>
-
-        <p>
-          Can't code and wish leave a comment on a problem, report an issue, or
-          say thank you:
-          <a href="https://kwasucsnotes.atabook.org/" target="_blank">
-            Guest Book</a
+        <div class="header-links">
+          <!-- <a href="https://github.com/HassanAmirii/csnotes" target="_blank"
+            >contribute on GitHub</a
+          > -->
+          <a href="https://kwasucsnotes.atabook.org/" target="_blank"
+            >Drop a msg on suggestions, question or resources or just say thank
+            you</a
           >
-        </p>
+        </div>
+      </header>
+
+      <section id="study-strategies">
+        <h2>Doing well in your courses</h2>
+        <div class="resource-card single-card">
+          <p>
+            a guide by Andrej Karpathy on effective study techniques, time
+            management, and maximizing learning outcomes.
+          </p>
+          <a
+            href="https://cs.stanford.edu/people/karpathy/advice.html"
+            target="_blank"
+            class="resource-link"
+            >Read More</a
+          >
+        </div>
       </section>
 
-      <section style="margin-top: 5em" id="contents">
-        <h2>Table of Contents</h2>
-
-        <ol>
-          <li>
-            Introduction to Computer Science
-            <a href="notes/day1-intro.html">Read</a>
-            <small>by Hassan2bit</small>
-          </li>
-          <li>
-            Data Types
-            <a href="notes/day2-datatypes.html">Read</a>
-            <small>by olarewaju abiola</small>
-          </li>
-          <li>
-            Algorithms Basics
-            <a href="notes/day1-algorithms.html">Read</a>
-            <small>by rafiu jabr</small>
-          </li>
-          <li>
-            Data Structures Overview
-            <a href="notes/day2-datastructures.html">Read</a>
-            <small>by raheem ridwan</small>
-          </li>
-          <li>
-            Object-Oriented Programming
-            <a href="notes/day1-oop.html">Read</a>
-            <small>by kolapo</small>
-          </li>
-        </ol>
-      </section>
-
-      <section style="margin-top: 5em" id="resources">
-        <h2>Resources</h2>
-        <ul>
-          <li>
-            <a href="resources/syllabus.pdf">Course Syllabus</a> – PDF version
-            of the official syllabus.
-          </li>
-          <li>
-            <a href="resources/reference-links.html">Reference Links</a> –
-            Curated tutorials, blogs, and documentation for extra study.
-          </li>
-        </ul>
+      <section id="course-materials">
+        <h2>Course Materials</h2>
+        <div class="resource-grid">
+          <div class="resource-card">
+            <h3>COS101: Intro to Computer Science</h3>
+            <p>
+              Foundational concepts of computing, problem-solving, and
+              introductory programming principles.
+            </p>
+            <a href="#" class="resource-link">View Resources</a>
+          </div>
+          <div class="resource-card">
+            <h3>GST111: Use of English I</h3>
+            <p>
+              Core materials on communication skills, grammar, and academic
+              writing standards.
+            </p>
+            <a href="#" class="resource-link">View Resources</a>
+          </div>
+          <div class="resource-card">
+            <h3>CSC101: Computer Science Fundamentals</h3>
+            <p>
+              University-specific introduction to the core tenets of computer
+              science and its applications.
+            </p>
+            <a href="#" class="resource-link">View Resources</a>
+          </div>
+          <div class="resource-card">
+            <h3>MTH101: Algebra & Trigonometry</h3>
+            <p>
+              Resources covering the real number system, set theory, quadratic
+              equations, and trigonometry.
+            </p>
+            <a href="/MTH101/mathlanding.html" class="resource-link"
+              >View Resources</a
+            >
+          </div>
+          <div class="resource-card">
+            <h3>PHY101: General Physics I</h3>
+            <p>
+              Materials on mechanics, properties of matter, heat, and basic
+              principles of physics.
+            </p>
+            <a href="#" class="resource-link">View Resources</a>
+          </div>
+          <div class="resource-card">
+            <h3>STA111: Intro to Statistics</h3>
+            <p>
+              Notes and practice problems for descriptive statistics,
+              probability, and data analysis.
+            </p>
+            <a href="#" class="resource-link">View Resources</a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer style="text-align: center; margin-top: 10em">
-      <p>
-        Made with ♥ by
-        <a href="https://hassanamirii.github.io/" target="_blank">Hassan2bit</a>
-      </p>
-      <p><small>cs-notes v1.0 — 2025</small></p>
-      <img
-        src="https://nukochannel.neocities.org/NukoImg/Banners/Dividers/nukoPipe.gif"
-        alt="Nuko Pipe Divider"
-      />
+    <footer>
+      <p><small>cs-resources v2.1 — 2025</small></p>
     </footer>
   </body>
 </html>

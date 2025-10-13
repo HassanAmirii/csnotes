@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTH101: Complete Cheat Sheet</title>
+    <style>
+      :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --background-color: #f8f9fa;
+        --text-color: #212529;
+        --border-color: #dee2e6;
+        --card-background: #ffffff;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2em;
+      }
+
+      .breadcrumb {
+        margin-bottom: 2em;
+      }
+
+      .breadcrumb a {
+        font-weight: 500;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.1em;
+      }
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 2em;
+        padding-bottom: 1.5em;
+      }
+
+      header h1 {
+        font-size: 2.8em;
+        margin-bottom: 0.25em;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: var(--secondary-color);
+        max-width: 600px;
+        margin: 0.5em auto;
+      }
+
+      .module {
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5em 2em;
+        margin-bottom: 2em;
+      }
+
+      .module h2 {
+        font-size: 1.8em;
+        margin-top: 0;
+        color: var(--text-color);
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      .formula-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .formula-list li {
+        margin-bottom: 1.25em;
+        padding-left: 1.5em;
+        position: relative;
+      }
+
+      .formula-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .formula-title {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      code {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="mathlanding.html">&larr; Back to MTH101 Hub</a>
+      </nav>
+
+      <header>
+        <h1>MTH101: Complete Formula Cheat Sheet</h1>
+        <p>
+          A concise summary of all essential formulas and definitions for
+          Algebra & Trigonometry.
+        </p>
+      </header>
+
+      <main>
+        <section class="module">
+          <h2>Module 1: The Real Number System</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Sets of Numbers</span>
+              Natural (1, 2, 3...), Integers (...-1, 0, 1...), Rational
+              (fractions), Irrational (non-repeating decimals like pi), Real
+              (all rational and irrational).
+            </li>
+            <li>
+              <span class="formula-title">Absolute Value</span>
+              The distance of a number from zero. <code>|x|</code> is
+              <code>x</code> if x is positive, <code>-x</code> if x is negative.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>Module 2: Elementary Set Theory</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Set Operations</span>
+              Union (A or B), Intersection (A and B), Complement (Not in A).
+            </li>
+            <li>
+              <span class="formula-title">Cardinality Principle</span>
+              <code>n(A U B) = n(A) + n(B) - n(A ∩ B)</code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>Module 3: Quadratic Equations (ax&sup2; + bx + c = 0)</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Quadratic Formula</span>
+              <code>x = [-b ± sqrt(b&sup2; - 4ac)] / 2a</code>
+            </li>
+            <li>
+              <span class="formula-title">Discriminant (D)</span>
+              <code>D = b&sup2; - 4ac</code><br />
+              If D > 0, two distinct real roots. <br />
+              If D = 0, one repeated real root. <br />
+              If D < 0, two complex roots.
+            </li>
+            <li>
+              <span class="formula-title"
+                >Sum and Product of Roots (alpha, beta)</span
+              >
+              Sum: <code>alpha + beta = -b/a</code><br />
+              Product: <code>alpha * beta = c/a</code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>Module 4: Sequences and Series</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Arithmetic Progression (A.P.)</span>
+              nth Term: <code>a_n = a + (n-1)d</code><br />
+              Sum of n terms: <code>S_n = (n/2) * [2a + (n-1)d]</code>
+            </li>
+            <li>
+              <span class="formula-title">Geometric Progression (G.P.)</span>
+              nth Term: <code>a_n = a * r^(n-1)</code><br />
+              Sum of n terms: <code>S_n = a * (1 - r^n) / (1 - r)</code><br />
+              Sum to Infinity: <code>S_inf = a / (1 - r)</code> (where |r| < 1)
+            </li>
+            <li>
+              <span class="formula-title">Harmonic Progression (H.P.)</span>
+              A sequence whose reciprocals form an A.P.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>Module 5: Mathematical Induction</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Principle of Proof</span>
+              1. <strong>Base Case:</strong> Prove the statement is true for
+              n=1.<br />
+              2. <strong>Inductive Hypothesis:</strong> Assume the statement is
+              true for n=k.<br />
+              3. <strong>Inductive Step:</strong> Prove the statement is true
+              for n=k+1, using the assumption.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>Module 6: The Binomial Theorem</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Expansion of (a+b)<sup>n</sup></span>
+              The terms are found using combinations. The (r+1)th term is:
+              <code>nCr * a^(n-r) * b^r</code>, where nCr is "n choose r".
+            </li>
+            <li>
+              <span class="formula-title"
+                >First few terms of (1+x)<sup>n</sup></span
+              >
+              <code
+                >1 + nx + [n(n-1)/2]x&sup2; + [n(n-1)(n-2)/6]x&sup3; + ...</code
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>Module 7: Trigonometry</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Angle Conversion</span>
+              <code>180 degrees = pi radians</code>
+            </li>
+            <li>
+              <span class="formula-title">Pythagorean Identities</span>
+              <code>sin&sup2;(x) + cos&sup2;(x) = 1</code><br />
+              <code>1 + tan&sup2;(x) = sec&sup2;(x)</code><br />
+              <code>1 + cot&sup2;(x) = csc&sup2;(x)</code>
+            </li>
+            <li>
+              <span class="formula-title">Sum and Difference Formulas</span>
+              <code>sin(A ± B) = sin(A)cos(B) ± cos(A)sin(B)</code><br />
+              <code>cos(A ± B) = cos(A)cos(B) ∓ sin(A)sin(B)</code>
+            </li>
+            <li>
+              <span class="formula-title">Double Angle Formulas</span>
+              <code>sin(2A) = 2sin(A)cos(A)</code><br />
+              <code>cos(2A) = cos&sup2;(A) - sin&sup2;(A)</code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>Module 8: Complex Numbers (z = a + bi)</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Modulus (r or |z|)</span>
+              <code>|z| = sqrt(a&sup2; + b&sup2;)</code>
+            </li>
+            <li>
+              <span class="formula-title">Polar Form</span>
+              <code>z = r * (cos(theta) + i*sin(theta))</code>
+            </li>
+            <li>
+              <span class="formula-title">De Moivre's Theorem</span>
+              <code
+                >[r*(cos(theta)+i*sin(theta))]^n =
+                r^n*(cos(n*theta)+i*sin(n*theta))</code
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
