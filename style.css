@@ -21,11 +21,13 @@ body {
   color: var(--text-color);
 }
 
-.owner-link {
+.owner-link,
+.whatsapp {
   color: #0a58ca;
   font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: underline;
 }
 
 .container {
