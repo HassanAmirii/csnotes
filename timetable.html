@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100-Level Weekly Study Schedule</title>
+    <style>
+      :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --background-color: #f8f9fa;
+        --text-color: #212529;
+        --border-color: #dee2e6;
+        --card-background: #ffffff;
+        --header-bg: #e9ecef;
+
+        /* Subject Colors */
+        --math-bg: #fff0f0;
+        --math-text: #c51414;
+        --phy-bg: #e6f7ff;
+        --phy-text: #0050b3;
+        --sta-bg: #f6ffed;
+        --sta-text: #389e0d;
+        --cos-bg: #fffbe6;
+        --cos-text: #d48806;
+        --csc-bg: #f9f0ff;
+        --csc-text: #531dab;
+        --gst-bg: #f0f5ff;
+        --gst-text: #1d39c4;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2em;
+      }
+
+      .breadcrumb {
+        margin-bottom: 2em;
+      }
+
+      .breadcrumb a {
+        font-weight: 500;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.1em;
+      }
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 2em;
+        padding-bottom: 1.5em;
+      }
+
+      header h1 {
+        font-size: 2.8em;
+        margin-bottom: 0.25em;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: var(--secondary-color);
+        max-width: 700px;
+        margin: 0.5em auto;
+      }
+
+      .instructions {
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5em 2em;
+        margin-bottom: 3em;
+      }
+      .instructions h2 {
+        margin-top: 0;
+        font-size: 1.8em;
+      }
+      .instructions ul {
+        padding-left: 20px;
+        margin-bottom: 0;
+      }
+      .instructions li {
+        margin-bottom: 0.5em;
+      }
+
+      .schedule-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        overflow: hidden; /* For border-radius to work on tables */
+      }
+
+      .schedule-table th,
+      .schedule-table td {
+        border: 1px solid var(--border-color);
+        padding: 1em;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .schedule-table thead th {
+        background-color: var(--header-bg);
+        text-align: center;
+        font-size: 1.1em;
+      }
+
+      .schedule-table .time-slot {
+        font-weight: bold;
+        background-color: var(--header-bg);
+        width: 120px;
+        text-align: center;
+      }
+
+      .subject-tag {
+        display: inline-block;
+        font-weight: bold;
+        padding: 0.3em 0.8em;
+        border-radius: 5px;
+        margin-bottom: 0.5em;
+        font-size: 0.9em;
+      }
+
+      /* Subject-specific styling */
+      .subject-math {
+        background-color: var(--math-bg);
+        color: var(--math-text);
+      }
+      .subject-phy {
+        background-color: var(--phy-bg);
+        color: var(--phy-text);
+      }
+      .subject-sta {
+        background-color: var(--sta-bg);
+        color: var(--sta-text);
+      }
+      .subject-cos {
+        background-color: var(--cos-bg);
+        color: var(--cos-text);
+      }
+      .subject-csc {
+        background-color: var(--csc-bg);
+        color: var(--csc-text);
+      }
+      .subject-gst {
+        background-color: var(--gst-bg);
+        color: var(--gst-text);
+      }
+
+      .task-description {
+        font-size: 0.9em;
+        color: var(--secondary-color);
+        margin-top: 0.25em;
+      }
+
+      .free-slot {
+        background-color: #f0f0f0;
+        text-align: center;
+        color: var(--secondary-color);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">&larr; Back to Home</a>
+      </nav>
+
+      <header>
+        <h1>100-Level Weekly Study Schedule</h1>
+        <p>
+          A balanced weekly plan to cover all your first-semester courses
+          effectively. Adapt this template to your lecture schedule.
+        </p>
+      </header>
+
+      <section class="instructions">
+        <h2>How to Use This Schedule</h2>
+        <ul>
+          <li>
+            <strong>Be Consistent:</strong> The key is to study a little bit
+            every day, not cram everything at once.
+          </li>
+          <li>
+            <strong>Active Recall:</strong> During "Practice" or "Review"
+            sessions, don't just read. Use your cheat sheets to quiz yourself
+            and solve problems without looking at the answers first.
+          </li>
+          <li>
+            <strong>50/10 Rule:</strong> For each 1-hour block, study for 50
+            minutes and take a 10-minute break.
+          </li>
+          <li>
+            <strong>Be Flexible:</strong> This is a template. Adjust it based on
+            your lecture times, assignment deadlines, and energy levels.
+          </li>
+        </ul>
+      </section>
+
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time-slot">Morning<br />(e.g., 9-11 AM)</td>
+            <td>
+              <span class="subject-tag subject-math">MTH 101</span>
+              <p class="task-description">
+                Review new lecture concepts & solve practice problems.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-phy">PHY 101</span>
+              <p class="task-description">
+                Study new topics and work through example problems.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-math">MTH 101</span>
+              <p class="task-description">
+                Focus entirely on problem-solving from the latest module.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-phy">PHY 101</span>
+              <p class="task-description">
+                Practice session: apply formulas to new problems.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-sta">STA 111</span>
+              <p class="task-description">
+                Learn new statistical concepts and formulas.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-math">MTH 101</span><br />
+              <span class="subject-tag subject-phy">PHY 101</span>
+              <p class="task-description">
+                Weekly Review: Use cheat sheets to quiz yourself on all topics
+                covered this week.
+              </p>
+            </td>
+            <td rowspan="3" class="free-slot">
+              <p>Rest & Recharge</p>
+              <p>(Or catch up on any missed topics)</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="time-slot">Afternoon<br />(e.g., 2-4 PM)</td>
+            <td>
+              <span class="subject-tag subject-cos">COS 101</span>
+              <p class="task-description">
+                Read through the course outline and create summary notes.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-csc">CSC 101</span>
+              <p class="task-description">
+                Review network concepts. Practice with HTML examples.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-gst">GST 111</span>
+              <p class="task-description">
+                Read the module for the week and summarize key definitions.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-cos">COS 101</span>
+              <p class="task-description">
+                Use cheat sheet to memorize key terms and definitions.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-csc">CSC 101</span>
+              <p class="task-description">
+                Review Internet vs. WWW. Deeper dive into a specific topic.
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-sta">STA 111</span><br />
+              <span class="subject-tag subject-csc">CSC 101</span>
+              <p class="task-description">
+                Review and practice problems from the week.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="time-slot">Evening<br />(e.g., 8-9 PM)</td>
+            <td>
+              <span class="subject-tag subject-sta">STA 111</span>
+              <p class="task-description">
+                Briefly review concepts from your last STA 111 lecture.
+              </p>
+            </td>
+            <td>
+              <p class="task-description">
+                Review notes from all of today's lectures (30 mins).
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-phy">PHY 101</span>
+              <p class="task-description">
+                Quick review of physics formulas from the cheat sheet.
+              </p>
+            </td>
+            <td>
+              <p class="task-description">
+                Review notes from all of today's lectures (30 mins).
+              </p>
+            </td>
+            <td>
+              <span class="subject-tag subject-gst">GST 111</span><br />
+              <span class="subject-tag subject-cos">COS 101</span>
+              <p class="task-description">
+                Review summary notes from both courses.
+              </p>
+            </td>
+            <td>
+              <p class="task-description">
+                Plan for the week ahead. Review schedule and set goals.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
