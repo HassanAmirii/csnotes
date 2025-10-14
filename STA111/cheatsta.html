@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STA111: Complete Cheat Sheet</title>
+    <style>
+      :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --background-color: #f8f9fa;
+        --text-color: #212529;
+        --border-color: #dee2e6;
+        --card-background: #ffffff;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2em;
+      }
+
+      .breadcrumb {
+        margin-bottom: 2em;
+      }
+
+      .breadcrumb a {
+        font-weight: 500;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.1em;
+      }
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 2em;
+        padding-bottom: 1.5em;
+      }
+
+      header h1 {
+        font-size: 2.8em;
+        margin-bottom: 0.25em;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: var(--secondary-color);
+        max-width: 600px;
+        margin: 0.5em auto;
+      }
+
+      .module {
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5em 2em;
+        margin-bottom: 2em;
+      }
+
+      .module h2 {
+        font-size: 1.8em;
+        margin-top: 0;
+        color: var(--text-color);
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      .definition-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .definition-list li {
+        margin-bottom: 1.25em;
+        padding-left: 1.5em;
+        position: relative;
+      }
+
+      .definition-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .term {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      code {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="stalanding.html">&larr; Back to STA111 Hub</a>
+      </nav>
+
+      <header>
+        <h1>STA111: Complete Cheat Sheet</h1>
+        <p>
+          A concise summary of key concepts and formulas for Statistical
+          Inference.
+        </p>
+      </header>
+
+      <main>
+        <section class="module">
+          <h2>Measures of Location (Central Tendency)</h2>
+          <ul class="definition-list">
+            <li>
+              <span class="term">Mean (Average)</span>
+              The sum of all data points divided by the number of data points.
+              <br />
+              <strong>Formula:</strong>
+              <code>Mean = (Sum of all values) / (Number of values)</code>
+            </li>
+            <li>
+              <span class="term">Median</span>
+              The middle value in a data set that has been arranged in order
+              from smallest to largest. If there is an even number of values,
+              the median is the average of the two middle values.
+            </li>
+            <li>
+              <span class="term">Mode</span>
+              The value that appears most frequently in a data set. A data set
+              can have one mode (unimodal), two modes (bimodal), more than two
+              modes (multimodal), or no mode.
+            </li>
+            <li>
+              <span class="term"
+                >Relationship between Mean, Median, and Mode</span
+              >
+              <strong>Symmetrical Distribution:</strong> Mean = Median =
+              Mode.<br />
+              <strong>Positively (Right) Skewed:</strong> Mean > Median >
+              Mode.<br />
+              <strong>Negatively (Left) Skewed:</strong> Mode > Median > Mean.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>Measures of Dispersion (Variability)</h2>
+          <ul class="definition-list">
+            <li>
+              <span class="term">Range</span>
+              The difference between the highest and lowest values in a data
+              set.<br />
+              <strong>Formula:</strong>
+              <code>Range = Maximum Value - Minimum Value</code>
+            </li>
+            <li>
+              <span class="term">Variance (s²)</span>
+              The average of the squared differences from the Mean. It measures
+              how far a set of numbers is spread out from their average
+              value.<br />
+              <strong>Formula (Ungrouped):</strong>
+              <code>s² = [Sum of (each value - mean)²] / (n - 1)</code>
+            </li>
+            <li>
+              <span class="term">Standard Deviation (s)</span>
+              The square root of the variance. It is the most common measure of
+              spread and indicates the typical distance between a data point and
+              the mean.<br />
+              <strong>Formula:</strong> <code>s = sqrt(Variance)</code>
+            </li>
+            <li>
+              <span class="term">Coefficient of Variation (CV)</span>
+              A relative measure of dispersion that expresses the standard
+              deviation as a percentage of the mean. It is useful for comparing
+              the variability of two or more data sets with different units or
+              means.<br />
+              <strong>Formula:</strong>
+              <code>CV = (Standard Deviation / Mean) * 100%</code>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
