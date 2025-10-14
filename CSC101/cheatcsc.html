@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSC101: Complete Cheat Sheet</title>
+    <style>
+      :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --background-color: #f8f9fa;
+        --text-color: #212529;
+        --border-color: #dee2e6;
+        --card-background: #ffffff;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2em;
+      }
+
+      .breadcrumb {
+        margin-bottom: 2em;
+      }
+
+      .breadcrumb a {
+        font-weight: 500;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.1em;
+      }
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 2em;
+        padding-bottom: 1.5em;
+      }
+
+      header h1 {
+        font-size: 2.8em;
+        margin-bottom: 0.25em;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: var(--secondary-color);
+        max-width: 600px;
+        margin: 0.5em auto;
+      }
+
+      .module {
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5em 2em;
+        margin-bottom: 2em;
+      }
+
+      .module h2 {
+        font-size: 1.8em;
+        margin-top: 0;
+        color: var(--text-color);
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      .definition-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .definition-list li {
+        margin-bottom: 1.25em;
+        padding-left: 1.5em;
+        position: relative;
+      }
+
+      .definition-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .term {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      code {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 0.95em;
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1em;
+      }
+      .comparison-table th,
+      .comparison-table td {
+        border: 1px solid var(--border-color);
+        padding: 0.75em;
+        text-align: left;
+      }
+      .comparison-table th {
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="csclanding.html">&larr; Back to CSC101 Hub</a>
+      </nav>
+
+      <header>
+        <h1>CSC101: Complete Cheat Sheet</h1>
+        <p>
+          A concise summary of key concepts in computer networks, internet
+          technologies, and web markup.
+        </p>
+      </header>
+
+      <main>
+        <section class="module">
+          <h2>1. Computer Network Fundamentals</h2>
+          <ul class="definition-list">
+            <li>
+              <span class="term">Network</span>
+              A collection of connected computers and devices for communication
+              and data exchange.
+            </li>
+            <li>
+              <span class="term">Protocol</span>
+              A set of rules governing data transmission (e.g., TCP/IP, HTTP).
+            </li>
+            <li>
+              <span class="term">Network Topologies</span>
+              The physical layout of a network. Common types:
+              <strong>Bus</strong>, <strong>Star</strong>,
+              <strong>Ring</strong>, <strong>Mesh</strong>.
+            </li>
+            <li>
+              <span class="term">Network Types</span>
+              <strong>LAN (Local Area Network):</strong> Small area (e.g.,
+              office, home).<br />
+              <strong>WAN (Wide Area Network):</strong> Large area (e.g., city,
+              country), connects LANs.
+            </li>
+            <li>
+              <span class="term">Network Architectures</span>
+              <strong>Client-Server:</strong> A central server provides
+              resources to client devices.<br />
+              <strong>Peer-to-Peer (P2P):</strong> All devices are equal and can
+              act as both client and server.
+            </li>
+            <li>
+              <span class="term">OSI Model (7 Layers)</span>
+              A conceptual framework for network functions:
+              <strong
+                >Application, Presentation, Session, Transport, Network, Data
+                Link, Physical</strong
+              >.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>2. The Internet and World Wide Web (WWW)</h2>
+          <ul class="definition-list">
+            <li>
+              <span class="term">Internet vs. WWW</span>
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Internet</th>
+                    <th>World Wide Web (WWW)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Nature</strong></td>
+                    <td>Hardware Infrastructure (cables, routers, servers)</td>
+                    <td>Software Service (a collection of web pages)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Protocol</strong></td>
+                    <td>TCP/IP (Transmission Control/Internet Protocol)</td>
+                    <td>HTTP/HTTPS (HyperText Transfer Protocol)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li>
+              <span class="term">Key Web Technologies</span>
+              <strong>URL (Uniform Resource Locator):</strong> The address of a
+              web resource.<br />
+              <strong>HTTP/HTTPS:</strong> Protocol for transferring web
+              pages.<br />
+              <strong>HTML (HyperText Markup Language):</strong> Language for
+              creating web pages.
+            </li>
+            <li>
+              <span class="term">Online Security Steps</span>
+              Use strong passwords, install antivirus, use VPN/private browsing,
+              check for HTTPS, log out of accounts, and avoid unknown downloads.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>3. Markup Languages & HTML</h2>
+          <ul class="definition-list">
+            <li>
+              <span class="term">Markup Language</span>
+              A language that uses tags to annotate a document, defining its
+              structure and presentation (e.g., HTML, XML).
+            </li>
+            <li>
+              <span class="term">Essential HTML Tags</span>
+              <code>&lt;!DOCTYPE html&gt;</code>: Defines the document type.<br />
+              <code>&lt;html&gt;</code>: The root element of an HTML page.<br />
+              <code>&lt;head&gt;</code>: Contains meta-information (title,
+              styles).<br />
+              <code>&lt;body&gt;</code>: Contains the visible page content.<br />
+              <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings.<br />
+              <code>&lt;p&gt;</code>: Paragraph.<br />
+              <code>&lt;a href="url"&gt;</code>: Anchor tag for hyperlinks.<br />
+              <code>&lt;img src="image.jpg" alt="text"&gt;</code>: Image tag.<br />
+              <code>&lt;ul&gt;</code> (Unordered List) &
+              <code>&lt;ol&gt;</code> (Ordered List) with
+              <code>&lt;li&gt;</code> (List Item).<br />
+              <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code> (row),
+              <code>&lt;th&gt;</code> (header), <code>&lt;td&gt;</code> (cell):
+              For tabular data.
+            </li>
+            <li>
+              <span class="term">Logical vs. Physical Tags</span>
+              <strong>Logical (Semantic) Tags:</strong> Describe the *meaning*
+              of the content. Best practice. (e.g.,
+              <code>&lt;strong&gt;</code> for important text,
+              <code>&lt;em&gt;</code> for emphasized text).<br />
+              <strong>Physical (Presentational) Tags:</strong> Describe the
+              *appearance* of the content. Avoid in modern web design; use CSS
+              instead. (e.g., <code>&lt;b&gt;</code> for bold,
+              <code>&lt;i&gt;</code> for italic).
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

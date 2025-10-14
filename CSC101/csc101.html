@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSC101: Internet Technology & Programming I</title>
+    <style>
+      :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --background-color: #f8f9fa;
+        --text-color: #212529;
+        --border-color: #dee2e6;
+        --card-background: #ffffff;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2em;
+      }
+
+      .breadcrumb {
+        margin-bottom: 2em;
+      }
+
+      .breadcrumb a {
+        font-weight: 500;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.1em;
+      }
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 2em;
+        padding-bottom: 1.5em;
+      }
+
+      header h1 {
+        font-size: 2.8em;
+        margin-bottom: 0.25em;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: var(--secondary-color);
+        max-width: 600px;
+        margin: 0.5em auto;
+      }
+
+      #table-of-contents {
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5em 2em;
+        margin-bottom: 3em;
+      }
+
+      .toc-list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .toc-list li {
+        margin-bottom: 0.75em;
+      }
+
+      .toc-list a {
+        text-decoration: none;
+        color: var(--primary-color);
+      }
+      .toc-list a:hover {
+        text-decoration: underline;
+      }
+
+      .module {
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5em 2em;
+        margin-bottom: 2em;
+        scroll-margin-top: 2em; /* Offset for in-page links */
+      }
+
+      .module h2 {
+        font-size: 1.8em;
+        margin-top: 0;
+        color: var(--text-color);
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      .module ul {
+        padding-left: 20px;
+      }
+
+      .module li {
+        margin-bottom: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="csclanding.html">&larr; Back to csc hub</a>
+      </nav>
+
+      <header>
+        <h1>CSC101: Internet Technology & Programming I</h1>
+        <p>
+          An outline of computer networks, internet technologies, and the
+          fundamentals of web markup languages.
+        </p>
+      </header>
+
+      <section id="table-of-contents">
+        <h2>Table of Contents</h2>
+        <ul class="toc-list">
+          <li>
+            <a href="#module1">Module 1: Computer Network Fundamentals</a>
+          </li>
+          <li>
+            <a href="#module2">Module 2: The Internet and World Wide Web</a>
+          </li>
+          <li><a href="#module3">Module 3: Markup Languages & HTML</a></li>
+        </ul>
+      </section>
+
+      <main>
+        <section id="module1" class="module">
+          <h2>Module 1: Computer Network Fundamentals</h2>
+          <ul>
+            <li>
+              <strong>Basic Concepts:</strong> Definition of a computer network,
+              nodes, and links.
+            </li>
+            <li>
+              <strong>Key Terminology:</strong>
+              <ul>
+                <li>
+                  <strong>Protocol:</strong> Rules for data transmission (e.g.,
+                  TCP/IP, HTTP).
+                </li>
+                <li>
+                  <strong>Topology:</strong> Physical and logical arrangement of
+                  a network (e.g., Bus, Star, Ring, Mesh).
+                </li>
+                <li>
+                  <strong>IP Address:</strong> Unique numerical identifier for a
+                  device on a network.
+                </li>
+                <li>
+                  <strong>DNS:</strong> Domain Name System, translates domain
+                  names to IP addresses.
+                </li>
+                <li>
+                  <strong>Firewall:</strong> A security device for monitoring
+                  and controlling network traffic.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Types of Computer Networks:</strong>
+              <ul>
+                <li>
+                  <strong>LAN (Local Area Network):</strong> Covers a small area
+                  like an office or home.
+                </li>
+                <li>
+                  <strong>WAN (Wide Area Network):</strong> Covers a large
+                  geographical area, connecting LANs.
+                </li>
+                <li>
+                  <strong>Cloud Networks:</strong> On-demand networks hosted by
+                  service providers.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Network Architecture:</strong>
+              <ul>
+                <li>
+                  <strong>Client-Server:</strong> Central server manages client
+                  nodes.
+                </li>
+                <li>
+                  <strong>Peer-to-Peer (P2P):</strong> No central server; every
+                  node can act as a client or server.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>The OSI Model:</strong> The 7 layers of network
+              communication (Physical, Data Link, Network, Transport, Session,
+              Presentation, Application).
+            </li>
+          </ul>
+        </section>
+
+        <section id="module2" class="module">
+          <h2>Module 2: The Internet and World Wide Web</h2>
+          <ul>
+            <li>
+              <strong>Definition of the Internet:</strong> A global,
+              decentralized "network of networks".
+            </li>
+            <li>
+              <strong>History of the Internet:</strong> From ARPANET (1960s) to
+              TCP/IP and the modern web.
+            </li>
+            <li>
+              <strong>Uses of the Internet:</strong> E-commerce, Cashless
+              Transactions, Education, Social Networking, Entertainment.
+            </li>
+            <li>
+              <strong>Security & Privacy:</strong> Understanding risks (hacking,
+              data breaches) and protection steps (antivirus, strong passwords,
+              VPNs).
+            </li>
+            <li>
+              <strong>World Wide Web (WWW):</strong> A service that runs on the
+              internet to provide access to web pages and applications.
+            </li>
+            <li>
+              <strong>Key Differences:</strong> Internet is the
+              hardware/infrastructure; WWW is the software/information service
+              that uses it.
+            </li>
+            <li>
+              <strong>WWW Architecture:</strong> Components include Clients
+              (browsers), Servers, URL, HTTP/HTTPS, and HTML.
+            </li>
+          </ul>
+        </section>
+
+        <section id="module3" class="module">
+          <h2>Module 3: Markup Languages & HTML</h2>
+          <ul>
+            <li>
+              <strong>Definition of a Markup Language:</strong> A system for
+              annotating a document to define its structure and presentation.
+            </li>
+            <li>
+              <strong>HTML (HyperText Markup Language):</strong> The standard
+              language for creating web pages.
+            </li>
+            <li>
+              <strong>Basic HTML Structure & Tags:</strong> html, head, body,
+              title, h1-h6, p, etc.
+            </li>
+            <li>
+              <strong>Key Elements:</strong>
+              <ul>
+                <li><strong>Anchor Tag (a):</strong> Creates hyperlinks.</li>
+                <li>
+                  <strong>Lists (ul, ol, li):</strong> Creates bulleted or
+                  numbered lists.
+                </li>
+                <li>
+                  <strong>Tables (table, tr, th, td):</strong> Organizes data in
+                  rows and columns.
+                </li>
+                <li><strong>Image Tag (img):</strong> Embeds images.</li>
+                <li>
+                  <strong>Forms (form, input):</strong> Collects user input.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Physical vs. Logical Tags:</strong>
+              <ul>
+                <li>
+                  <strong>Physical Tags (e.g., b, i):</strong> Define visual
+                  appearance. (Considered outdated).
+                </li>
+                <li>
+                  <strong>Logical Tags (e.g., strong, em):</strong> Define
+                  semantic meaning or structure. (Modern best practice).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Other Markup Languages:</strong> A brief overview of XML,
+              XHTML, and SGML.
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
