@@ -20,7 +20,49 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+/* Add this to the bottom of your style.css file */
 
+#feedback-section {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2.5em;
+  margin-top: 4em;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#feedback-section h2 {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+#feedback-section p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  color: var(--secondary-color);
+  line-height: 1.7;
+}
+
+.feedback-button {
+  display: inline-block;
+  background-color: #28a745; /* A green 'success' color */
+  color: #fff;
+  padding: 0.8em 1.8em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.feedback-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px);
+  color: #fff;
+}
 .owner-link,
 .whatsapp {
   color: #0a58ca;
