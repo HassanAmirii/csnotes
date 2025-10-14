@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COS101: Complete Cheat Sheet</title>
+    <style>
+      :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --background-color: #f8f9fa;
+        --text-color: #212529;
+        --border-color: #dee2e6;
+        --card-background: #ffffff;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2em;
+      }
+
+      .breadcrumb {
+        margin-bottom: 2em;
+      }
+
+      .breadcrumb a {
+        font-weight: 500;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.1em;
+      }
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 2em;
+        padding-bottom: 1.5em;
+      }
+
+      header h1 {
+        font-size: 2.8em;
+        margin-bottom: 0.25em;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: var(--secondary-color);
+        max-width: 600px;
+        margin: 0.5em auto;
+      }
+
+      .module {
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5em 2em;
+        margin-bottom: 2em;
+      }
+
+      .module h2 {
+        font-size: 1.8em;
+        margin-top: 0;
+        color: var(--text-color);
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      .definition-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .definition-list li {
+        margin-bottom: 1.25em;
+        padding-left: 1.5em;
+        position: relative;
+      }
+
+      .definition-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .term {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1em;
+      }
+      .comparison-table th,
+      .comparison-table td {
+        border: 1px solid var(--border-color);
+        padding: 0.75em;
+        text-align: left;
+      }
+      .comparison-table th {
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="cslanding.html">&larr; Back to COS101 Hub</a>
+      </nav>
+
+      <header>
+        <h1>COS101: Complete Cheat Sheet</h1>
+        <p>
+          A concise summary of key concepts, definitions, and classifications
+          for Introduction to Computing.
+        </p>
+      </header>
+
+      <main>
+        <section class="module">
+          <h2>1. Introduction to Computing</h2>
+          <ul class="definition-list">
+            <li>
+              <span class="term">Data vs. Information</span>
+              <strong>Data:</strong> Raw, unorganized facts (e.g., numbers,
+              text).<br />
+              <strong>Information:</strong> Data that has been processed into a
+              meaningful form (e.g., a chart, a report).
+            </li>
+            <li>
+              <span class="term">Generations of Computers</span>
+              <strong>1st Gen (1940s-50s):</strong> Vacuum Tubes. Very large,
+              slow, and expensive.<br />
+              <strong>2nd Gen (1950s-60s):</strong> Transistors. Smaller,
+              faster, and more reliable.<br />
+              <strong>3rd Gen (1960s-70s):</strong> Integrated Circuits (ICs).
+              Computers became smaller and accessible to more businesses.<br />
+              <strong>4th Gen (1970s-Present):</strong> Microprocessors. Led to
+              personal computers (PCs).<br />
+              <strong>5th Gen (Present/Future):</strong> Artificial Intelligence
+              (AI) and Quantum Computing.
+            </li>
+            <li>
+              <span class="term">Classification by Data Representation</span>
+              <strong>Analog:</strong> Represents data in a continuous form
+              (e.g., a thermometer).<br />
+              <strong>Digital:</strong> Represents data in discrete digits (0s
+              and 1s).<br />
+              <strong>Hybrid:</strong> Combines features of both analog and
+              digital computers.
+            </li>
+            <li>
+              <span class="term">Classification by Purpose</span>
+              <strong>General-Purpose:</strong> Can perform a wide variety of
+              tasks (e.g., PC, smartphone).<br />
+              <strong>Special-Purpose:</strong> Designed to perform a specific
+              task (e.g., calculator, ATM).
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>2. Components of a Computer</h2>
+          <ul class="definition-list">
+            <li>
+              <span class="term">Computer Hardware</span>
+              The physical parts of a computer you can touch.
+              <ul>
+                <li>
+                  <strong>CPU (Central Processing Unit):</strong> The "brain" of
+                  the computer; executes instructions.
+                </li>
+                <li>
+                  <strong>Primary Memory:</strong> Main memory, directly
+                  accessible by the CPU (RAM, ROM).
+                </li>
+                <li>
+                  <strong>Secondary Storage:</strong> Long-term storage (HDD,
+                  SSD, USB drive).
+                </li>
+                <li>
+                  <strong>Input Devices:</strong> Send data to the computer
+                  (keyboard, mouse).
+                </li>
+                <li>
+                  <strong>Output Devices:</strong> Receive data from the
+                  computer (monitor, printer).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="term">RAM vs. ROM</span>
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>RAM (Random Access Memory)</th>
+                    <th>ROM (Read-Only Memory)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Volatility</strong></td>
+                    <td>Volatile (loses data when power is off)</td>
+                    <td>Non-Volatile (keeps data without power)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Operation</strong></td>
+                    <td>Read and Write</td>
+                    <td>Read-Only</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Purpose</strong></td>
+                    <td>Temporary storage for running programs</td>
+                    <td>Permanent storage for firmware (e.g., BIOS)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li>
+              <span class="term">Computer Software</span>
+              A set of instructions that tells the hardware what to do.
+              <ul>
+                <li>
+                  <strong>System Software:</strong> Manages the computer
+                  hardware (e.g., Operating System, Drivers).
+                </li>
+                <li>
+                  <strong>Application Software:</strong> Performs specific tasks
+                  for the user (e.g., Chrome, MS Word, Photoshop).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="term">Operating System (OS) Functions</span>
+              Manages memory, processes, files, and input/output devices. It
+              provides a user interface.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>3. Applications of Computers</h2>
+          <ul class="definition-list">
+            <li>
+              <span class="term">Key Application Areas</span>
+              <strong>Education:</strong> E-learning platforms, online
+              research.<br />
+              <strong>Business:</strong> Data processing, e-commerce,
+              communication.<br />
+              <strong>Healthcare:</strong> Patient records, medical imaging,
+              diagnostics.<br />
+              <strong>Entertainment:</strong> Video games, streaming services,
+              special effects.<br />
+              <strong>Science:</strong> Simulations, data modeling and
+              analysis.<br />
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

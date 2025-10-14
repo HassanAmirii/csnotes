@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHY101: Complete Cheat Sheet</title>
+    <style>
+      :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --background-color: #f8f9fa;
+        --text-color: #212529;
+        --border-color: #dee2e6;
+        --card-background: #ffffff;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2em;
+      }
+
+      .breadcrumb {
+        margin-bottom: 2em;
+      }
+
+      .breadcrumb a {
+        font-weight: 500;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.1em;
+      }
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 2em;
+        padding-bottom: 1.5em;
+      }
+
+      header h1 {
+        font-size: 2.8em;
+        margin-bottom: 0.25em;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: var(--secondary-color);
+        max-width: 600px;
+        margin: 0.5em auto;
+      }
+
+      .module {
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5em 2em;
+        margin-bottom: 2em;
+      }
+
+      .module h2 {
+        font-size: 1.8em;
+        margin-top: 0;
+        color: var(--text-color);
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      .formula-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .formula-list li {
+        margin-bottom: 1.25em;
+        padding-left: 1.5em;
+        position: relative;
+      }
+
+      .formula-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .formula-title {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      code {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #e9ecef;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="physicslanding.html">&larr; Back to PHY101 Hub</a>
+      </nav>
+
+      <header>
+        <h1>PHY101: Complete Formula Cheat Sheet</h1>
+        <p>
+          A concise summary of all essential formulas and definitions for
+          General Physics I.
+        </p>
+      </header>
+
+      <main>
+        <section class="module">
+          <h2>1. Units and Dimensional Analysis</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Base SI Units</span>
+              Length (meter, m), Mass (kilogram, kg), Time (second, s).
+            </li>
+            <li>
+              <span class="formula-title">Dimensional Analysis</span>
+              Using dimensions (like L, M, T) to check if an equation is
+              consistent.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>2. Vectors</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Scalar (Dot) Product</span>
+              <code>A • B = |A| |B| cos(theta)</code>. Result is a scalar.
+            </li>
+            <li>
+              <span class="formula-title">Vector (Cross) Product</span>
+              <code>|A x B| = |A| |B| sin(theta)</code>. Result is a vector
+              perpendicular to both A and B.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>3 & 4. Motion (Kinematics)</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title"
+                >Equations for Constant Acceleration</span
+              >
+              <code>v = u + at</code><br />
+              <code>s = ut + 0.5at&sup2;</code><br />
+              <code>v&sup2; = u&sup2; + 2as</code>
+            </li>
+            <li>
+              <span class="formula-title">Projectile Motion</span>
+              Horizontal motion is constant velocity (x = v_x * t). Vertical
+              motion is constant acceleration (using kinematics with a = -g).
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>5. Newton’s Laws of Motion</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Newton's Second Law</span>
+              <code>F_net = ma</code> (Net Force = mass * acceleration)
+            </li>
+            <li>
+              <span class="formula-title">Linear Momentum (p)</span>
+              <code>p = mv</code> (momentum = mass * velocity).
+            </li>
+            <li>
+              <span class="formula-title">Conservation of Momentum</span>
+              In a closed system, total initial momentum equals total final
+              momentum. <code>m1u1 + m2u2 = m1v1 + m2v2</code>.
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>6. Circular Motion</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Centripetal Acceleration (a_c)</span>
+              <code>a_c = v&sup2; / r</code>
+            </li>
+            <li>
+              <span class="formula-title">Centripetal Force (F_c)</span>
+              <code>F_c = ma_c = mv&sup2; / r</code> (This is a net force
+              directed towards the center).
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>7 & 8. Work, Energy, and Power</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Work Done (W)</span>
+              <code>W = F * d * cos(theta)</code>
+            </li>
+            <li>
+              <span class="formula-title">Kinetic Energy (KE)</span>
+              <code>KE = 0.5 * mv&sup2;</code>
+            </li>
+            <li>
+              <span class="formula-title"
+                >Gravitational Potential Energy (PE)</span
+              >
+              <code>PE = mgh</code>
+            </li>
+            <li>
+              <span class="formula-title">Spring Potential Energy</span>
+              <code>PE_spring = 0.5 * kx&sup2;</code> (where k is the spring
+              constant).
+            </li>
+            <li>
+              <span class="formula-title">Conservation of Energy</span>
+              Total Initial Energy = Total Final Energy.
+              <code>KE_i + PE_i = KE_f + PE_f</code>.
+            </li>
+            <li>
+              <span class="formula-title">Power (P)</span>
+              <code>P = Work / time = F * v</code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>9 & 10. Rotational Motion & Statics</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title">Torque (tau)</span>
+              <code>tau = r * F * sin(theta)</code>
+            </li>
+            <li>
+              <span class="formula-title">Equilibrium Conditions</span>
+              1. Net Force = 0 (Translational Equilibrium).<br />
+              2. Net Torque = 0 (Rotational Equilibrium).
+            </li>
+            <li>
+              <span class="formula-title">Elasticity (Hooke's Law)</span>
+              <code>F = -kx</code> (Force exerted by a spring).
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>11. Oscillations</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title"
+                >Period of a Mass-Spring System (T)</span
+              >
+              <code>T = 2 * pi * sqrt(m/k)</code>
+            </li>
+            <li>
+              <span class="formula-title">Period of a Simple Pendulum (T)</span>
+              <code>T = 2 * pi * sqrt(L/g)</code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="module">
+          <h2>12. Gravity</h2>
+          <ul class="formula-list">
+            <li>
+              <span class="formula-title"
+                >Newton's Law of Universal Gravitation</span
+              >
+              <code>F_g = G * (m1 * m2) / r&sup2;</code> (where G is the
+              gravitational constant).
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
