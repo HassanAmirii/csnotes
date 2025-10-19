@@ -12,7 +12,7 @@
         --text-color: #212529;
         --border-color: #dee2e6;
         --card-background: #ffffff;
-        --link-hover-color: #0a58ca;
+        --hover-bg-color: #f8f9fa;
       }
 
       body {
@@ -72,21 +72,36 @@
         background-color: var(--card-background);
         border: 1px solid var(--border-color);
         border-radius: 8px;
-        padding: 1em;
+        overflow: hidden; /* Ensures child elements respect the border radius */
       }
 
       main li {
         counter-increment: resource-counter;
-        padding: 1.5em;
         display: flex;
         align-items: flex-start;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      main li:hover {
+        background-color: var(--hover-bg-color);
       }
 
       main li:not(:last-child) {
         border-bottom: 1px solid var(--border-color);
       }
 
-      main li::before {
+      /* The anchor tag now carries the styling to make the whole area clickable */
+      main li a {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        padding: 1.5em;
+        text-decoration: none;
+        color: inherit; /* Inherits the body text color */
+      }
+
+      /* The numbered circle is now inside the link for better structure */
+      main li a::before {
         content: counter(resource-counter);
         font-weight: 700;
         font-size: 1.5em;
@@ -109,17 +124,13 @@
       .list-item-content h3 {
         margin: 0;
         font-size: 1.25em;
-      }
-
-      .list-item-content h3 a {
-        text-decoration: none;
         color: var(--text-color);
         transition: color 0.2s ease-in-out;
       }
 
-      .list-item-content h3 a:hover {
+      /* The h3 text color changes when the list item is hovered */
+      main li:hover .list-item-content h3 {
         color: var(--primary-color);
-        text-decoration: underline;
       }
 
       .list-item-content p {
@@ -142,68 +153,65 @@
       <main>
         <ol>
           <li>
-            <div class="list-item-content">
-              <h3><a href="phy101.html">Course Outline</a></h3>
-              <p>
-                A complete breakdown of all modules and topics covered in the
-                course syllabus.
-              </p>
-            </div>
+            <a href="phy101.html">
+              <div class="list-item-content">
+                <h3>Course Outline</h3>
+                <p>
+                  A complete breakdown of all modules and topics covered in the
+                  course syllabus.
+                </p>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="list-item-content">
-              <h3>
-                <a
-                  href="https://drive.google.com/drive/folders/1PrekcjViXUuQZQi6al4IlzmCFwPNm9pl"
-                  >Past Test Questions</a
-                >
-              </h3>
-              <p>
-                Review questions from previous tests to prepare for the test
-                assessment.
-              </p>
-            </div>
-          </li>
-          <!-- <li>
-            <div class="list-item-content">
-              <h3><a href="#">Past Exam Questions</a></h3>
-              <p>
-                WORK IN PROGRESS: I'M STILL LOOKING FOR PAST EXAM QUESTIONS
-                PLEASE IF YOU HAVE ANY KINDLY SHARE WITH ME THANKS> 09121724193
-                whatsapp
-              </p>
-            </div>
-          </li> -->
-          <li>
-            <div class="list-item-content">
-              <h3><a href="cheatphy.html">Formula Cheat Sheet</a></h3>
-              <p>
-                A concise, one-page summary of the most important formulas and
-                identities.
-              </p>
-            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1PrekcjViXUuQZQi6al4IlzmCFwPNm9pl"
+              target="_blank"
+            >
+              <div class="list-item-content">
+                <h3>Past Test Questions</h3>
+                <p>
+                  Review questions from previous tests to prepare for the test
+                  assessment.
+                </p>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="list-item-content">
-              <h3>
-                <a
-                  href="https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/pages/lecture-notes/"
-                  >MIT open course ware: resources on physics (mechanics)</a
-                >
-              </h3>
-              <p>Do well to make the best use of it!</p>
-            </div>
+            <a href="cheatphy.html">
+              <div class="list-item-content">
+                <h3>Formula Cheat Sheet</h3>
+                <p>
+                  A concise, one-page summary of the most important formulas and
+                  identities.
+                </p>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="list-item-content">
-              <h3>
-                <a
-                  href="https://drive.google.com/drive/folders/1-ydgqpUkS1JX2-Qni3CUbOinBXjZAMlG?usp=drive_link"
-                  >Complete Resources on Google drive by seniors</a
-                >
-              </h3>
-              <p>A curated list of external links, and recommended readings.</p>
-            </div>
+            <a
+              href="https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/pages/lecture-notes/"
+              target="_blank"
+            >
+              <div class="list-item-content">
+                <h3>MIT OpenCourseWare: Classical Mechanics</h3>
+                <p>Do well to make the best use of it!</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/drive/folders/1-ydgqpUkS1JX2-Qni3CUbOinBXjZAMlG?usp=drive_link"
+              target="_blank"
+            >
+              <div class="list-item-content">
+                <h3>Complete Resources on Google Drive</h3>
+                <p>
+                  A curated list of external links, and recommended readings
+                  provided by seniors.
+                </p>
+              </div>
+            </a>
           </li>
         </ol>
       </main>
