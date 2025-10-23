@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Physics 101 Quiz</title>
-    <link rel="stylesheet" href="/quiz.css">
+    <link rel="stylesheet" href="/quiz.css" />
   </head>
   <body>
     <nav class="breadcrumb">
@@ -21,25 +21,37 @@
 
           <!-- Reverted Navigation Area Structure -->
           <div class="navigation-area">
-             <!-- Left Group (Keep IDs for JS) -->
-             <div class="nav-group-left">
-                 <button id="prevButton" data-action="prevButton" class="quiz-nav" type="button">
-                    Prev
-                 </button>
-                 <button id="nextButton" data-action="nextButton" class="quiz-nav" type="button">
-                    Next
-                 </button>
-             </div>
-             <!-- Right Group (Keep IDs/data-action for JS) -->
-             <div class="nav-group-right">
-                 <button id="submitButton" type="submit" >Submit Quiz</button>
-                 <button id="stopButton" data-action="stopButton" type="button">Cancel Quiz</button>
-             </div>
+            <!-- Left Group (Keep IDs for JS) -->
+            <div class="nav-group-left">
+              <button
+                id="prevButton"
+                data-action="prevButton"
+                class="quiz-nav"
+                type="button"
+              >
+                Prev
+              </button>
+              <button
+                id="nextButton"
+                data-action="nextButton"
+                class="quiz-nav"
+                type="button"
+              >
+                Next
+              </button>
+            </div>
+            <!-- Right Group (Keep IDs/data-action for JS) -->
+            <div class="nav-group-right">
+              <button id="submitButton" type="submit">Submit Quiz</button>
+              <button id="stopButton" data-action="stopButton" type="button">
+                Cancel Quiz
+              </button>
+            </div>
           </div>
         </form>
       </div>
     </main>
 
-    <script src="/script/quiz.js"></script> 
+    <script src="/script/quiz.js"></script>
+  </body>
 </html>
-

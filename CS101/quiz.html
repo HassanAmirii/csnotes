@@ -3,34 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>qiza - a quiz app</title>
+    <title>Physics 101 Quiz</title>
+    <link rel="stylesheet" href="/quiz.css" />
   </head>
   <body>
+    <nav class="breadcrumb">
+      <a href="query.html">&larr; Back to difficulty selection</a>
+    </nav>
     <header>
-      <h1>Welcome to qiza</h1>
+      <h1 id="quiz-title">CS 101 Quiz</h1>
     </header>
     <main>
-      <p id="tagNote">Test your knowledge with our quizzes!</p>
       <div id="app">
         <form id="quizForm">
-          <div id="questionBox"></div>
+          <div id="questionBox">Loading Question...</div>
           <div id="optionBox"></div>
 
-          <button data-action="prevButton" class="quiz-nav" type="button">
-            prev
-          </button>
-          <button data-action="nextButton" class="quiz-nav" type="button">
-            next
-          </button>
-
-          <button id="submitButton" type="submit">Submit quiz</button>
-          <button data-action="stopButton" type="button">cancel quiz</button>
+          <!-- Reverted Navigation Area Structure -->
+          <div class="navigation-area">
+            <!-- Left Group (Keep IDs for JS) -->
+            <div class="nav-group-left">
+              <button
+                id="prevButton"
+                data-action="prevButton"
+                class="quiz-nav"
+                type="button"
+              >
+                Prev
+              </button>
+              <button
+                id="nextButton"
+                data-action="nextButton"
+                class="quiz-nav"
+                type="button"
+              >
+                Next
+              </button>
+            </div>
+            <!-- Right Group (Keep IDs/data-action for JS) -->
+            <div class="nav-group-right">
+              <button id="submitButton" type="submit">Submit Quiz</button>
+              <button id="stopButton" data-action="stopButton" type="button">
+                Cancel Quiz
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     </main>
-    <footer>
-      <p>&copy; 2023 qiza</p>
-    </footer>
 
     <script src="/script/quiz.js"></script>
   </body>
