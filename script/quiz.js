@@ -4,11 +4,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   let tagNote = document.getElementById("tagNote");
   const app = document.getElementById("app");
   const quizForm = document.getElementById("quizForm");
-  const selectedDifficulty = localStorage.getItem("selectedDifficulty");
-  // const easyTotal = 10;
-  // const mediumTotal = 10;
-  // const hardTotal = 10;
-  // const madMaxTotal = 30;
+  let selectedDifficulty = localStorage.getItem("selectedDifficulty");
+
   let questionIndex = 0;
   let quizScore = 0;
   let loadQuestion;
@@ -21,23 +18,28 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
       const data = await response.json();
       const getPathName = window.location.pathname;
-      console.log(getPathName);
       if (selectedDifficulty) {
+        let getAllQuestions;
         if (getPathName === "/CS101/quiz.html") {
-          loadQuestion = data["cos101"].filter(
-            (question) => question.difficulty === selectedDifficulty
-          );
-        } else if (getPathName === "/CS102/quiz.html") {
-          loadQuestion = data["cos102"].filter(
-            (question) => question.difficulty === selectedDifficulty
-          );
+          getAllQuestions = data["cos101"];
+        } else if (getPathName === "/CSC101/quiz.html") {
+          getAllQuestions = data["csc101"];
+        } else if (getPathName === "/MTH101/quiz.html") {
+          getAllQuestions = data["mth101"];
+        } else if (getPathName === "/PHY101/quiz.html") {
+          getAllQuestions = data["phy101"];
+        } else if (getPathName === "/GST111/quiz.html") {
+          getAllQuestions = data["gst111"];
+        } else if (getPathName === "/STA111/quiz.html") {
+          getAllQuestions = data["sta111"];
+        }
+
+        if (selectedDifficulty === "mad-max") {
+          loadQuestion = getAllQuestions;
         } else {
-          app.innerHTML = `<p>Unable to find quiz question for this course page </p> <p>Try again later!</p>`;
-          console.log(
-            window.location.pathname,
-            "error: expected '/quiz.html' "
+          loadQuestion = getAllQuestions.filter(
+            (question) => question.difficulty === selectedDifficulty
           );
-          tagNote.innerText = "";
         }
       } else {
         app.innerHTML = `<p>You are yet to pick a difficulty level kindly go back to the previous page to pick one</p>`;
