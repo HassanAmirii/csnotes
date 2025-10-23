@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Quiz Mode</title>
+    <style>
+      :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --background-color: #f8f9fa;
+        --text-color: #212529;
+        --border-color: #dee2e6;
+        --card-background: #ffffff;
+        --success-color: #198754; /* Green for start */
+        --success-hover-color: #157347; /* Darker green */
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+      .container {
+        width: 90%;
+        max-width: 500px;
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 2.5em;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        text-align: center;
+      }
+      h1 {
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+      p {
+        color: var(--secondary-color);
+        margin-bottom: 2em;
+      }
+      .difficulty-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+      .difficulty-btn {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        font-size: 1.1em;
+        font-weight: 500;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: transparent;
+        color: var(--primary-color);
+        text-align: left;
+        transition: background-color 0.2s, color 0.2s;
+      }
+      .difficulty-btn:hover {
+        background-color: var(--primary-color);
+        color: white;
+      }
+      .difficulty-btn span {
+        font-weight: normal;
+        font-size: 0.9em;
+        color: var(--secondary-color);
+      }
+      /* CORRECTED LINE BELOW */
+      .difficulty-btn:hover span {
+        color: #f0f0f0;
+      }
+
+      /* Styles for the Start Quiz button */
+      .start-quiz {
+        display: inline-block;
+        width: auto;
+        padding: 0.8em 2em;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: var(--success-color);
+        color: white;
+        text-align: center;
+        transition: background-color 0.2s, transform 0.1s;
+        margin-top: 1.5em;
+      }
+
+      .start-quiz:hover {
+        background-color: var(--success-hover-color);
+        transform: translateY(-2px);
+      }
+
+      .start-quiz:active {
+        transform: translateY(0px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="selection-title">Select a Quiz Mode</h1>
+      <p>Choose how you'd like to practice.</p>
+      <div id="difficulty-buttons" class="difficulty-buttons">
+        <button type="button" class="difficulty-btn" data-difficulty="easy">
+          Easy <span>(10 Questions)</span>
+        </button>
+        <button type="button" class="difficulty-btn" data-difficulty="medium">
+          Medium <span>(10 Questions)</span>
+        </button>
+        <button type="button" class="difficulty-btn" data-difficulty="hard">
+          Hard <span>(10 Questions)</span>
+        </button>
+        <button type="button" class="difficulty-btn" data-difficulty="mad-max">
+          Mad Max <span>(mix of all : 30 Questions)</span>
+        </button>
+
+        <button type="button" class="start-quiz">Start Quiz</button>
+      </div>
+    </div>
+
+    <script src="/script/query.js"></script>
+  </body>
+</html>

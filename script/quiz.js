@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
   let tagNote = document.getElementById("tagNote");
   const app = document.getElementById("app");
   const quizForm = document.getElementById("quizForm");
+  const selectedDifficulty = localStorage.getItem("selectedDifficulty");
+  // const easyTotal = 10;
+  // const mediumTotal = 10;
+  // const hardTotal = 10;
+  // const madMaxTotal = 30;
   let questionIndex = 0;
   let quizScore = 0;
   let loadQuestion;
@@ -15,19 +20,28 @@ document.addEventListener("DOMContentLoaded", (e) => {
       }
 
       const data = await response.json();
-      const getLevelFromLocalStorage = localStorage.getItem("level");
       const getPathName = window.location.pathname;
-      if (getPathName === "/quiz.html") {
-        if (getLevelFromLocalStorage === "mad-max") {
-          loadQuestion = data["mth101"];
-        } else {
-          loadQuestion = data["mth101"].filter(
-            (question) => question.difficulty === getLevelFromLocalStorage
+      console.log(getPathName);
+      if (selectedDifficulty) {
+        if (getPathName === "/CS101/quiz.html") {
+          loadQuestion = data["cos101"].filter(
+            (question) => question.difficulty === selectedDifficulty
           );
+        } else if (getPathName === "/CS102/quiz.html") {
+          loadQuestion = data["cos102"].filter(
+            (question) => question.difficulty === selectedDifficulty
+          );
+        } else {
+          app.innerHTML = `<p>Unable to find quiz question for this course page </p> <p>Try again later!</p>`;
+          console.log(
+            window.location.pathname,
+            "error: expected '/quiz.html' "
+          );
+          tagNote.innerText = "";
         }
       } else {
-        tagNote.innerText = "";
-        app.innerHTML = `<p>It's not you; It's us :(</p><p>Unable to find quiz question for this page </p> <p>Try again later!</p>`;
+        app.innerHTML = `<p>You are yet to pick a difficulty level kindly go back to the previous page to pick one</p>`;
+        console.log("you are yet to pick a difficulty level");
       }
 
       function renderQuestion() {
@@ -87,7 +101,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
               renderQuestion();
             }
           } else if (action === "stopButton") {
-            window.location.reload();
+            window.location.href = "query.html";
           }
         }
       });

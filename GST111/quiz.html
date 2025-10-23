@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qiza - a quiz app</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to qiza</h1>
+    </header>
+    <main>
+      <p id="tagNote">Test your knowledge with our quizzes!</p>
+      <div id="app">
+        <form id="quizForm">
+          <div id="questionBox"></div>
+          <div id="optionBox"></div>
+
+          <button data-action="prevButton" class="quiz-nav" type="button">
+            prev
+          </button>
+          <button data-action="nextButton" class="quiz-nav" type="button">
+            next
+          </button>
+
+          <button id="submitButton" type="submit">Submit quiz</button>
+          <button data-action="stopButton" type="button">cancel quiz</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 qiza</p>
+    </footer>
+
+    <script src="/script/quiz.js"></script>
+  </body>
+</html>
