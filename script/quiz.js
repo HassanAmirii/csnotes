@@ -20,17 +20,33 @@ document.addEventListener("DOMContentLoaded", (e) => {
       const getPathName = window.location.pathname;
       if (selectedDifficulty) {
         let getAllQuestions;
-        if (getPathName === "/CS101/quiz.html") {
+        if (getPathName === "/CS101/quiz" || getPathName === "/cos101/quiz") {
+          // Added lowercase check and potential alternative
           getAllQuestions = data["cos101"];
-        } else if (getPathName === "/CSC101/quiz.html") {
+        } else if (
+          getPathName === "/CSC101/quiz.html" ||
+          getPathName === "/CSC101/quiz"
+        ) {
           getAllQuestions = data["csc101"];
-        } else if (getPathName === "/MTH101/quiz.html") {
+        } else if (
+          getPathName === "/MTH101/quiz.html" ||
+          getPathName === "/MTH101/quiz"
+        ) {
           getAllQuestions = data["mth101"];
-        } else if (getPathName === "/PHY101/quiz.html") {
+        } else if (
+          getPathName === "/PHY101/quiz.html" ||
+          getPathName === "/PHY101/quiz"
+        ) {
           getAllQuestions = data["phy101"];
-        } else if (getPathName === "/GST111/quiz.html") {
+        } else if (
+          getPathName === "/GST111/quiz.html" ||
+          getPathName === "/GST111/quiz"
+        ) {
           getAllQuestions = data["gst111"];
-        } else if (getPathName === "/STA111/quiz.html") {
+        } else if (
+          getPathName === "/STA111/quiz.html" ||
+          getPathName === "/STA111/quiz"
+        ) {
           getAllQuestions = data["sta111"];
         }
 
