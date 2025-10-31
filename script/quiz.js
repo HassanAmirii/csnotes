@@ -20,8 +20,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
       const getPathName = window.location.pathname;
       if (selectedDifficulty) {
         let getAllQuestions;
-        if (getPathName === "/CS101/quiz" || getPathName === "/cos101/quiz") {
-          // Added lowercase check and potential alternative
+        if (
+          getPathName === "/CS101/quiz" ||
+          getPathName === "/CS101/quiz.html"
+        ) {
           getAllQuestions = data["cos101"];
         } else if (
           getPathName === "/CSC101/quiz.html" ||
@@ -95,6 +97,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         });
       }
       renderQuestion();
+
       // submit functionality
       quizForm.addEventListener("submit", (e) => {
         e.preventDefault();
