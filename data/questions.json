@@ -9,18 +9,21 @@
         "Control Process Unit"
       ],
       "answer": 0,
+      "answertext": "Central Processing Unit",
       "difficulty": "easy"
     },
     {
       "question": "Which of these is an example of an input device?",
       "options": ["Monitor", "Printer", "Keyboard", "Speakers"],
       "answer": 2,
+      "answertext": "Keyboard",
       "difficulty": "easy"
     },
     {
       "question": "What type of memory loses its content when the power is turned off?",
       "options": ["ROM", "RAM", "SSD", "Hard Drive"],
       "answer": 1,
+      "answertext": "RAM",
       "difficulty": "easy"
     },
     {
@@ -32,12 +35,14 @@
         "Firmware"
       ],
       "answer": 2,
+      "answertext": "Operating System",
       "difficulty": "easy"
     },
     {
       "question": "Binary code uses which digits?",
       "options": ["0 and 1", "0 through 9", "A through F", "1 and 2"],
       "answer": 0,
+      "answertext": "0 and 1",
       "difficulty": "easy"
     },
     {
@@ -49,36 +54,42 @@
         "World Web Wide"
       ],
       "answer": 0,
+      "answertext": "World Wide Web",
       "difficulty": "easy"
     },
     {
       "question": "Which component is considered the 'brain' of the computer?",
       "options": ["RAM", "Hard Drive", "Motherboard", "CPU"],
       "answer": 3,
+      "answertext": "CPU",
       "difficulty": "easy"
     },
     {
       "question": "What is raw, unorganized facts called?",
       "options": ["Information", "Data", "Knowledge", "Output"],
       "answer": 1,
+      "answertext": "Data",
       "difficulty": "easy"
     },
     {
       "question": "Which of these is an example of Application Software?",
       "options": ["Windows 10", "Linux Kernel", "Microsoft Word", "BIOS"],
       "answer": 2,
+      "answertext": "Microsoft Word",
       "difficulty": "easy"
     },
     {
       "question": "Which computer generation used transistors?",
       "options": ["First", "Second", "Third", "Fourth"],
       "answer": 1,
+      "answertext": "Second",
       "difficulty": "easy"
     },
     {
       "question": "Which type of computer represents data using continuous physical quantities?",
       "options": ["Digital", "Hybrid", "Analog", "Quantum"],
       "answer": 2,
+      "answertext": "Analog",
       "difficulty": "medium"
     },
     {
@@ -90,6 +101,7 @@
         "ROM is cheaper"
       ],
       "answer": 1,
+      "answertext": "ROM is non-volatile",
       "difficulty": "medium"
     },
     {
@@ -101,6 +113,7 @@
         "By Technology"
       ],
       "answer": 2,
+      "answertext": "By Size/Capacity",
       "difficulty": "medium"
     },
     {
@@ -112,6 +125,7 @@
         "Create documents"
       ],
       "answer": 1,
+      "answertext": "Manage hardware resources",
       "difficulty": "medium"
     },
     {
@@ -123,36 +137,42 @@
         "Physical size"
       ],
       "answer": 2,
+      "answertext": "Data loss on power off",
       "difficulty": "medium"
     },
     {
       "question": "Which computer generation is primarily associated with Integrated Circuits (ICs)?",
       "options": ["First", "Second", "Third", "Fourth"],
       "answer": 2,
+      "answertext": "Third",
       "difficulty": "medium"
     },
     {
       "question": "A device designed for a specific task, like an ATM, is what type of computer?",
       "options": ["General-Purpose", "Hybrid", "Special-Purpose", "Analog"],
       "answer": 2,
+      "answertext": "Special-Purpose",
       "difficulty": "medium"
     },
     {
       "question": "What is firmware typically stored in?",
       "options": ["RAM", "Hard Drive", "SSD", "ROM"],
       "answer": 3,
+      "answertext": "ROM",
       "difficulty": "medium"
     },
     {
       "question": "Converting raw data into a meaningful report is an example of:",
       "options": ["Input", "Storage", "Processing", "Output"],
       "answer": 2,
+      "answertext": "Processing",
       "difficulty": "medium"
     },
     {
       "question": "Which type of software is designed to help maintain the computer system?",
       "options": ["Application", "System", "Utility", "Programming"],
       "answer": 2,
+      "answertext": "Utility",
       "difficulty": "medium"
     },
     {
@@ -164,6 +184,7 @@
         "They are the same thing"
       ],
       "answer": 1,
+      "answertext": "Software tells hardware what to do",
       "difficulty": "hard"
     },
     {
@@ -175,6 +196,7 @@
         "It connects peripherals"
       ],
       "answer": 2,
+      "answertext": "It provides long-term, non-volatile storage",
       "difficulty": "hard"
     },
     {
@@ -186,6 +208,7 @@
         "Microprocessors"
       ],
       "answer": 3,
+      "answertext": "Microprocessors",
       "difficulty": "hard"
     },
     {
@@ -197,6 +220,7 @@
         "Hardware processes software, then stores it"
       ],
       "answer": 2,
+      "answertext": "Data is entered, manipulated, and results are shown",
       "difficulty": "hard"
     },
     {
@@ -208,6 +232,7 @@
         "For running basic operating systems"
       ],
       "answer": 1,
+      "answertext": "To combine fast digital computation with continuous analog input/output",
       "difficulty": "hard"
     },
     {
@@ -219,6 +244,7 @@
         "System software is small, Application software is large"
       ],
       "answer": 1,
+      "answertext": "System software manages hardware, Application software performs user tasks",
       "difficulty": "hard"
     },
     {
@@ -230,6 +256,7 @@
         "To connect to the internet"
       ],
       "answer": 2,
+      "answertext": "To initialize hardware during boot-up",
       "difficulty": "hard"
     },
     {
@@ -241,6 +268,7 @@
         "Large size, high heat, unreliability"
       ],
       "answer": 3,
+      "answertext": "Large size, high heat, unreliability",
       "difficulty": "hard"
     },
     {
@@ -252,6 +280,7 @@
         "It uses less memory than decimal"
       ],
       "answer": 1,
+      "answertext": "Electronic circuits can easily represent two states (on/off)",
       "difficulty": "hard"
     },
     {
@@ -263,6 +292,7 @@
         "Integrated Circuits"
       ],
       "answer": 2,
+      "answertext": "Artificial Intelligence",
       "difficulty": "hard"
     }
   ],
@@ -271,60 +301,70 @@
       "question": "Which branch studies the physical properties of speech sounds?",
       "options": ["Phonology", "Morphology", "Syntax", "Phonetics"],
       "answer": 3,
+      "answertext": "Phonetics",
       "difficulty": "easy"
     },
     {
       "question": "Which sentence type is used to ask a question?",
       "options": ["Declarative", "Imperative", "Interrogative", "Exclamatory"],
       "answer": 2,
+      "answertext": "Interrogative",
       "difficulty": "easy"
     },
     {
       "question": "What is the term for the smallest unit of sound that distinguishes meaning in a language?",
       "options": ["Morpheme", "Phoneme", "Syllable", "Word"],
       "answer": 1,
+      "answertext": "Phoneme",
       "difficulty": "easy"
     },
     {
       "question": "Which part of speech typically names a person, place, thing, or idea?",
       "options": ["Verb", "Adjective", "Noun", "Adverb"],
       "answer": 2,
+      "answertext": "Noun",
       "difficulty": "easy"
     },
     {
       "question": "A sentence containing one independent clause is called:",
       "options": ["Simple", "Compound", "Complex", "Fragment"],
       "answer": 0,
+      "answertext": "Simple",
       "difficulty": "easy"
     },
     {
       "question": "Which of these belongs to a closed word class?",
       "options": ["Noun", "Verb", "Adjective", "Pronoun"],
       "answer": 3,
+      "answertext": "Pronoun",
       "difficulty": "easy"
     },
     {
       "question": "What is the study of correct reasoning called?",
       "options": ["Ethics", "Logic", "Rhetoric", "Grammar"],
       "answer": 1,
+      "answertext": "Logic",
       "difficulty": "easy"
     },
     {
       "question": "Presenting someone else's work as your own without credit is called:",
       "options": ["Paraphrasing", "Summarizing", "Plagiarism", "Citing"],
       "answer": 2,
+      "answertext": "Plagiarism",
       "difficulty": "easy"
     },
     {
       "question": "A statement that can be true or false is a:",
       "options": ["Question", "Command", "Proposition", "Syllogism"],
       "answer": 2,
+      "answertext": "Proposition",
       "difficulty": "easy"
     },
     {
       "question": "Which sentence type gives a command?",
       "options": ["Declarative", "Imperative", "Interrogative", "Exclamatory"],
       "answer": 1,
+      "answertext": "Imperative",
       "difficulty": "easy"
     },
     {
@@ -336,12 +376,14 @@
         "Phonetics studies grammar, Phonology studies sounds"
       ],
       "answer": 1,
+      "answertext": "Phonetics studies physical sounds, Phonology studies sound systems",
       "difficulty": "medium"
     },
     {
       "question": "Identify the type of sentence: 'Although it was raining, we went for a walk.'",
       "options": ["Simple", "Compound", "Complex", "Compound-Complex"],
       "answer": 2,
+      "answertext": "Complex",
       "difficulty": "medium"
     },
     {
@@ -353,6 +395,7 @@
         "Voicing only"
       ],
       "answer": 1,
+      "answertext": "Place and manner of articulation",
       "difficulty": "medium"
     },
     {
@@ -364,6 +407,7 @@
         "Closed classes contain only verbs"
       ],
       "answer": 2,
+      "answertext": "Open classes accept new words, closed classes rarely do",
       "difficulty": "medium"
     },
     {
@@ -375,6 +419,7 @@
         "To define word classes"
       ],
       "answer": 2,
+      "answertext": "To draw conclusions from existing premises",
       "difficulty": "medium"
     },
     {
@@ -386,12 +431,14 @@
         "It is not important"
       ],
       "answer": 1,
+      "answertext": "To avoid plagiarism and give credit",
       "difficulty": "medium"
     },
     {
       "question": "Identify the main verb in the sentence: 'The student quickly finished the assignment.'",
       "options": ["student", "quickly", "finished", "assignment"],
       "answer": 2,
+      "answertext": "finished",
       "difficulty": "medium"
     },
     {
@@ -403,12 +450,14 @@
         "An adjective"
       ],
       "answer": 2,
+      "answertext": "A coordinating conjunction (and, but, or)",
       "difficulty": "medium"
     },
     {
       "question": "Sounds produced with an open vocal tract are typically:",
       "options": ["Consonants", "Vowels", "Phonemes", "Morphemes"],
       "answer": 1,
+      "answertext": "Vowels",
       "difficulty": "medium"
     },
     {
@@ -420,12 +469,14 @@
         "Common knowledge"
       ],
       "answer": 2,
+      "answertext": "Original works of authorship",
       "difficulty": "medium"
     },
     {
       "question": "Analyze the structure: 'She studied hard, so she passed the exam, although it was difficult.'",
       "options": ["Simple", "Compound", "Complex", "Compound-Complex"],
       "answer": 3,
+      "answertext": "Compound-Complex",
       "difficulty": "hard"
     },
     {
@@ -437,6 +488,7 @@
         "The height of the tongue"
       ],
       "answer": 2,
+      "answertext": "How the airflow is obstructed (e.g., stopped, friction)",
       "difficulty": "hard"
     },
     {
@@ -448,6 +500,7 @@
         "It is only important for academics"
       ],
       "answer": 1,
+      "answertext": "It provides rules for clarity and mutual understanding",
       "difficulty": "hard"
     },
     {
@@ -459,6 +512,7 @@
         "Only closed class words can change"
       ],
       "answer": 1,
+      "answertext": "Yes, e.g., 'run' can be a noun or verb",
       "difficulty": "hard"
     },
     {
@@ -470,6 +524,7 @@
         "There is no difference"
       ],
       "answer": 0,
+      "answertext": "Logic requires evidence and valid reasoning structures",
       "difficulty": "hard"
     },
     {
@@ -481,6 +536,7 @@
         "Only using online sources"
       ],
       "answer": 1,
+      "answertext": "Accuracy, fairness, and considering audience impact",
       "difficulty": "hard"
     },
     {
@@ -492,6 +548,7 @@
         "went outside"
       ],
       "answer": 0,
+      "answertext": "When the rain stopped",
       "difficulty": "hard"
     },
     {
@@ -503,6 +560,7 @@
         "To connect clauses"
       ],
       "answer": 2,
+      "answertext": "To introduce a noun phrase (e.g., a, the, this)",
       "difficulty": "hard"
     },
     {
@@ -514,6 +572,7 @@
         "Phonology only deals with vowels"
       ],
       "answer": 1,
+      "answertext": "Phonological rules explain variations in pronunciation in context",
       "difficulty": "hard"
     },
     {
@@ -525,6 +584,7 @@
         "Only using non-digital materials"
       ],
       "answer": 1,
+      "answertext": "A legal doctrine allowing limited use of copyrighted material without permission",
       "difficulty": "hard"
     }
   ],
@@ -533,12 +593,14 @@
       "question": "What is a collection of interconnected computers and devices called?",
       "options": ["A node", "A protocol", "A network", "A topology"],
       "answer": 2,
+      "answertext": "A network",
       "difficulty": "easy"
     },
     {
       "question": "Which network type typically covers a small area like an office building?",
       "options": ["WAN", "LAN", "MAN", "PAN"],
       "answer": 1,
+      "answertext": "LAN",
       "difficulty": "easy"
     },
     {
@@ -550,6 +612,7 @@
         "Information Protocol"
       ],
       "answer": 0,
+      "answertext": "Internet Protocol",
       "difficulty": "easy"
     },
     {
@@ -561,12 +624,14 @@
         "Connect networks"
       ],
       "answer": 2,
+      "answertext": "Translate domain names to IP addresses",
       "difficulty": "easy"
     },
     {
       "question": "Which of these is a physical network topology?",
       "options": ["TCP/IP", "HTTP", "Star", "OSI"],
       "answer": 2,
+      "answertext": "Star",
       "difficulty": "easy"
     },
     {
@@ -578,12 +643,14 @@
         "HyperText Machine Language"
       ],
       "answer": 0,
+      "answertext": "HyperText Markup Language",
       "difficulty": "easy"
     },
     {
       "question": "Which HTML tag is used to create a hyperlink?",
       "options": ["<link>", "<a>", "<href>", "<p>"],
       "answer": 1,
+      "answertext": "<a>",
       "difficulty": "easy"
     },
     {
@@ -595,18 +662,21 @@
         "WWW is hardware, Internet is software"
       ],
       "answer": 2,
+      "answertext": "They are related but different",
       "difficulty": "easy"
     },
     {
       "question": "Which device connects different networks together?",
       "options": ["Hub", "Switch", "Router", "Modem"],
       "answer": 2,
+      "answertext": "Router",
       "difficulty": "easy"
     },
     {
       "question": "What is a set of rules governing network communication called?",
       "options": ["Topology", "Node", "Protocol", "Architecture"],
       "answer": 2,
+      "answertext": "Protocol",
       "difficulty": "easy"
     },
     {
@@ -618,6 +688,7 @@
         "P2P is faster"
       ],
       "answer": 2,
+      "answertext": "Client-Server has a central server, P2P does not",
       "difficulty": "medium"
     },
     {
@@ -629,18 +700,21 @@
         "Transport Layer"
       ],
       "answer": 2,
+      "answertext": "Network Layer",
       "difficulty": "medium"
     },
     {
       "question": "What protocol is primarily used for transferring web pages?",
       "options": ["FTP", "SMTP", "HTTP", "TCP"],
       "answer": 2,
+      "answertext": "HTTP",
       "difficulty": "medium"
     },
     {
       "question": "Which HTML tag is used to define a paragraph?",
       "options": ["<br>", "<hr>", "<p>", "<div>"],
       "answer": 2,
+      "answertext": "<p>",
       "difficulty": "medium"
     },
     {
@@ -652,6 +726,7 @@
         "Store web pages"
       ],
       "answer": 2,
+      "answertext": "Monitor and control network traffic for security",
       "difficulty": "medium"
     },
     {
@@ -663,24 +738,28 @@
         "The tag's ID"
       ],
       "answer": 1,
+      "answertext": "The target destination URL",
       "difficulty": "medium"
     },
     {
       "question": "Which type of HTML tag describes the meaning or structure, like `<h1>` or `<em>`?",
       "options": ["Physical", "Formatting", "Logical/Semantic", "Stylistic"],
       "answer": 2,
+      "answertext": "Logical/Semantic",
       "difficulty": "medium"
     },
     {
       "question": "What technology did ARPANET pioneer for network communication?",
       "options": ["Circuit-switching", "Packet-switching", "DNS", "HTTP"],
       "answer": 1,
+      "answertext": "Packet-switching",
       "difficulty": "medium"
     },
     {
       "question": "Which HTML tag creates an unordered (bulleted) list?",
       "options": ["<ol>", "<li>", "<dl>", "<ul>"],
       "answer": 3,
+      "answertext": "<ul>",
       "difficulty": "medium"
     },
     {
@@ -692,6 +771,7 @@
         "Formatting data"
       ],
       "answer": 2,
+      "answertext": "End-to-end communication and reliability (TCP/UDP)",
       "difficulty": "medium"
     },
     {
@@ -703,6 +783,7 @@
         "Translates domain names"
       ],
       "answer": 2,
+      "answertext": "Provides reliable, connection-oriented data transmission",
       "difficulty": "hard"
     },
     {
@@ -714,6 +795,7 @@
         "Packet-switching requires DNS"
       ],
       "answer": 2,
+      "answertext": "Packet-switching sends data chunks independently; Circuit-switching dedicates a path",
       "difficulty": "hard"
     },
     {
@@ -725,6 +807,7 @@
         "It assigns IP addresses"
       ],
       "answer": 2,
+      "answertext": "It provides a standardized reference framework for understanding network functions",
       "difficulty": "hard"
     },
     {
@@ -736,6 +819,7 @@
         "CSS is easier to write"
       ],
       "answer": 1,
+      "answertext": "It improves maintainability, accessibility, and allows different styles",
       "difficulty": "hard"
     },
     {
@@ -747,6 +831,7 @@
         "Network security breaches"
       ],
       "answer": 2,
+      "answertext": "The difficulty for humans to remember numerical IP addresses",
       "difficulty": "hard"
     },
     {
@@ -758,6 +843,7 @@
         "Router requests data from server"
       ],
       "answer": 1,
+      "answertext": "Client (browser) sends HTTP request, Server sends HTTP response with HTML",
       "difficulty": "hard"
     },
     {
@@ -769,6 +855,7 @@
         "Image alignment"
       ],
       "answer": 2,
+      "answertext": "Alternative text for accessibility and if image fails to load",
       "difficulty": "hard"
     },
     {
@@ -780,6 +867,7 @@
         "Transport Layer"
       ],
       "answer": 1,
+      "answertext": "Presentation Layer",
       "difficulty": "hard"
     },
     {
@@ -791,6 +879,7 @@
         "Switches connect networks, Routers learn addresses"
       ],
       "answer": 2,
+      "answertext": "Hubs repeat signals, Switches learn addresses, Routers connect networks",
       "difficulty": "hard"
     },
     {
@@ -802,6 +891,7 @@
         "They are identical"
       ],
       "answer": 1,
+      "answertext": "`<strong>` describes meaning (importance), `<b>` describes appearance (bold)",
       "difficulty": "hard"
     }
   ],
@@ -815,54 +905,63 @@
         "{sqrt(2), 3, pi}"
       ],
       "answer": 1,
+      "answertext": "{1, 2, 3, 4}",
       "difficulty": "easy"
     },
     {
       "question": "What is the value of |-5|?",
       "options": ["-5", "5", "0", "1/5"],
       "answer": 1,
+      "answertext": "5",
       "difficulty": "easy"
     },
     {
       "question": "If A = {1, 2, 3} and B = {3, 4, 5}, what is A ∩ B (intersection)?",
       "options": ["{1, 2, 3, 4, 5}", "{1, 2}", "{3}", "{4, 5}"],
       "answer": 2,
+      "answertext": "{3}",
       "difficulty": "easy"
     },
     {
       "question": "Solve for x: 2x + 3 = 11",
       "options": ["3", "4", "5", "8"],
       "answer": 1,
+      "answertext": "4",
       "difficulty": "easy"
     },
     {
       "question": "What is the first term (a) in the sequence 3, 7, 11, 15...?",
       "options": ["4", "3", "7", "1"],
       "answer": 1,
+      "answertext": "3",
       "difficulty": "easy"
     },
     {
       "question": "What is the value of 3! (3 factorial)?",
       "options": ["3", "6", "9", "1"],
       "answer": 1,
+      "answertext": "6",
       "difficulty": "easy"
     },
     {
       "question": "Convert 90 degrees to radians.",
       "options": ["pi", "pi/2", "2*pi", "pi/4"],
       "answer": 1,
+      "answertext": "pi/2",
       "difficulty": "easy"
     },
     {
       "question": "What is sin(90 degrees)?",
       "options": ["0", "1", "-1", "0.5"],
       "answer": 1,
+      "answertext": "1",
       "difficulty": "easy"
     },
     {
       "question": "What is the imaginary unit 'i' defined as?",
       "options": ["sqrt(1)", "sqrt(-1)", "1", "-1"],
       "answer": 1,
+      "answertext": "sqrt(-1)",
       "difficulty": "easy"
     },
     {
@@ -874,30 +973,35 @@
         "a^n + b^n = c^n"
       ],
       "answer": 2,
+      "answertext": "ax^2 + bx + c = 0",
       "difficulty": "easy"
     },
     {
       "question": "Which of these is an irrational number?",
       "options": ["4/5", "sqrt(16)", "0.333...", "pi"],
       "answer": 3,
+      "answertext": "pi",
       "difficulty": "medium"
     },
     {
       "question": "If U = {1, 2, 3, 4, 5} and A = {1, 3}, what is A' (complement of A)?",
       "options": ["{1, 3}", "{2, 4, 5}", "{1, 2, 3, 4, 5}", "{}"],
       "answer": 1,
+      "answertext": "{2, 4, 5}",
       "difficulty": "medium"
     },
     {
       "question": "Find the roots of x^2 - 5x + 6 = 0 using factorization.",
       "options": ["x=1, x=6", "x=-2, x=-3", "x=2, x=3", "x=-1, x=-6"],
       "answer": 2,
+      "answertext": "x=2, x=3",
       "difficulty": "medium"
     },
     {
       "question": "What is the 10th term of the Arithmetic Progression 2, 5, 8...?",
       "options": ["29", "31", "32", "27"],
       "answer": 0,
+      "answertext": "29",
       "difficulty": "medium"
     },
     {
@@ -909,42 +1013,49 @@
         "1 = 2(3)/2 -> 1=3"
       ],
       "answer": 0,
+      "answertext": "1 = 1(2)/2 -> 1=1",
       "difficulty": "medium"
     },
     {
       "question": "Expand (x+y)^2 using the Binomial Theorem.",
       "options": ["x^2 + y^2", "x^2 - 2xy + y^2", "x^2 + 2xy + y^2", "2x + 2y"],
       "answer": 2,
+      "answertext": "x^2 + 2xy + y^2",
       "difficulty": "medium"
     },
     {
       "question": "If sin(theta) = 3/5 and theta is acute, what is cos(theta)?",
       "options": ["3/5", "4/5", "5/4", "5/3"],
       "answer": 1,
+      "answertext": "4/5",
       "difficulty": "medium"
     },
     {
       "question": "Simplify the complex number (2+3i) + (1-i).",
       "options": ["3 + 2i", "3 + 4i", "1 + 2i", "3 - 2i"],
       "answer": 0,
+      "answertext": "3 + 2i",
       "difficulty": "medium"
     },
     {
       "question": "What is the discriminant (b^2 - 4ac) for 3x^2 - 2x + 1 = 0?",
       "options": ["16", "-8", "8", "-16"],
       "answer": 1,
+      "answertext": "-8",
       "difficulty": "medium"
     },
     {
       "question": "What is the sum of the first 5 terms of the Geometric Progression 3, 6, 12...?",
       "options": ["93", "45", "186", "63"],
       "answer": 0,
+      "answertext": "93",
       "difficulty": "medium"
     },
     {
       "question": "If n(A)=5, n(B)=7, and n(A U B)=10, what is n(A ∩ B)?",
       "options": ["12", "3", "2", "17"],
       "answer": 2,
+      "answertext": "2",
       "difficulty": "hard"
     },
     {
@@ -956,12 +1067,14 @@
         "(-4 ± sqrt(12))/4"
       ],
       "answer": 0,
+      "answertext": "(-4 ± sqrt(24))/4",
       "difficulty": "hard"
     },
     {
       "question": "What is the sum to infinity of the G.P. 9, 3, 1...?",
       "options": ["27", "13.5", "12", "Infinite"],
       "answer": 1,
+      "answertext": "13.5",
       "difficulty": "hard"
     },
     {
@@ -973,12 +1086,14 @@
         "Assume false for k, prove true for k+1"
       ],
       "answer": 1,
+      "answertext": "Assume true for k, prove for k+1",
       "difficulty": "hard"
     },
     {
       "question": "Find the coefficient of x^3 in the expansion of (1+2x)^5.",
       "options": ["10", "40", "80", "160"],
       "answer": 2,
+      "answertext": "80",
       "difficulty": "hard"
     },
     {
@@ -990,18 +1105,21 @@
         "sqrt(2)/2"
       ],
       "answer": 0,
+      "answertext": "(sqrt(6)+sqrt(2))/4",
       "difficulty": "hard"
     },
     {
       "question": "Calculate (1+i)^4 using De Moivre's Theorem or direct multiplication.",
       "options": ["4", "-4", "4i", "-4i"],
       "answer": 1,
+      "answertext": "-4",
       "difficulty": "hard"
     },
     {
       "question": "If alpha and beta are roots of x^2 - 3x + 5 = 0, find the value of alpha^2 + beta^2.",
       "options": ["9", "19", "-1", "-19"],
       "answer": 2,
+      "answertext": "-1",
       "difficulty": "hard"
     },
     {
@@ -1013,12 +1131,14 @@
         "sqrt(3)(cos(45)+isin(45))"
       ],
       "answer": 0,
+      "answertext": "2(cos(60)+isin(60))",
       "difficulty": "hard"
     },
     {
       "question": "If A = {x | x is an even number < 10} and B = {x | x is a prime number < 10}, find (A U B)'. Assume U = {1, 2, ..., 10}.",
       "options": ["{1, 9}", "{10}", "{1, 9, 10}", "{1, 3, 5, 7, 9}"],
       "answer": 0,
+      "answertext": "{1, 9}",
       "difficulty": "hard"
     }
   ],
@@ -1027,6 +1147,7 @@
       "question": "What is the SI unit for Length?",
       "options": ["Kilogram", "Second", "Meter", "Foot"],
       "answer": 2,
+      "answertext": "Meter",
       "difficulty": "easy"
     },
     {
@@ -1038,18 +1159,21 @@
         "Acceleration"
       ],
       "answer": 2,
+      "answertext": "Speed and direction",
       "difficulty": "easy"
     },
     {
       "question": "What quantity measures the rate of change of velocity?",
       "options": ["Speed", "Displacement", "Acceleration", "Momentum"],
       "answer": 2,
+      "answertext": "Acceleration",
       "difficulty": "easy"
     },
     {
       "question": "Which of Newton's laws states that for every action, there is an equal and opposite reaction?",
       "options": ["First Law", "Second Law", "Third Law", "Law of Gravitation"],
       "answer": 2,
+      "answertext": "Third Law",
       "difficulty": "easy"
     },
     {
@@ -1061,6 +1185,7 @@
         "Thermal Energy"
       ],
       "answer": 1,
+      "answertext": "Kinetic Energy",
       "difficulty": "easy"
     },
     {
@@ -1072,72 +1197,84 @@
         "Centripetal force"
       ],
       "answer": 3,
+      "answertext": "Centripetal force",
       "difficulty": "easy"
     },
     {
       "question": "What is the unit of Work and Energy?",
       "options": ["Watt", "Newton", "Joule", "Pascal"],
       "answer": 2,
+      "answertext": "Joule",
       "difficulty": "easy"
     },
     {
       "question": "Gravity causes objects near the Earth's surface to fall with an acceleration of approximately:",
       "options": ["9.8 m/s", "9.8 m/s^2", "1 N", "1 kg"],
       "answer": 1,
+      "answertext": "9.8 m/s^2",
       "difficulty": "easy"
     },
     {
       "question": "Mass is a measure of:",
       "options": ["Weight", "Inertia", "Volume", "Force"],
       "answer": 1,
+      "answertext": "Inertia",
       "difficulty": "easy"
     },
     {
       "question": "Which of these is a scalar quantity?",
       "options": ["Velocity", "Acceleration", "Force", "Speed"],
       "answer": 3,
+      "answertext": "Speed",
       "difficulty": "easy"
     },
     {
       "question": "A car accelerates from rest to 20 m/s in 5 seconds. What is its average acceleration?",
       "options": ["4 m/s^2", "5 m/s^2", "10 m/s^2", "100 m/s^2"],
       "answer": 0,
+      "answertext": "4 m/s^2",
       "difficulty": "medium"
     },
     {
       "question": "If a net force of 10 N acts on a 2 kg object, what is the acceleration?",
       "options": ["20 m/s^2", "5 m/s^2", "0.2 m/s^2", "8 m/s^2"],
       "answer": 1,
+      "answertext": "5 m/s^2",
       "difficulty": "medium"
     },
     {
       "question": "Calculate the kinetic energy of a 4 kg object moving at 3 m/s.",
       "options": ["6 J", "12 J", "18 J", "36 J"],
       "answer": 2,
+      "answertext": "18 J",
       "difficulty": "medium"
     },
     {
       "question": "What is the work done if a force of 5 N moves an object 2 meters in the direction of the force?",
       "options": ["2.5 J", "7 J", "10 J", "0 J"],
       "answer": 2,
+      "answertext": "10 J",
       "difficulty": "medium"
     },
     {
       "question": "A ball is thrown upwards. At its highest point, its velocity is:",
       "options": ["Maximum", "Minimum (not zero)", "Zero", "Constant"],
       "answer": 2,
+      "answertext": "Zero",
       "difficulty": "medium"
     },
     {
       "question": "What is the momentum of a 5 kg object moving at 4 m/s?",
       "options": ["1.25 kg m/s", "9 kg m/s", "20 kg m/s", "25 kg m/s"],
       "answer": 2,
+      "answertext": "20 kg m/s",
       "difficulty": "medium"
     },
     {
       "question": "An object moves in a circle of radius 2m at a constant speed of 4 m/s. What is its centripetal acceleration?",
       "options": ["2 m/s^2", "4 m/s^2", "8 m/s^2", "16 m/s^2"],
       "answer": 2,
+      "answertext": "8 m/s^2",
       "difficulty": "medium"
     },
     {
@@ -1149,24 +1286,28 @@
         "Energy x Time"
       ],
       "answer": 2,
+      "answertext": "Work / Time",
       "difficulty": "medium"
     },
     {
       "question": "Hooke's Law describes the force exerted by:",
       "options": ["Gravity", "A spring", "Friction", "Air resistance"],
       "answer": 1,
+      "answertext": "A spring",
       "difficulty": "medium"
     },
     {
       "question": "The tendency of an object to resist changes in its motion is:",
       "options": ["Momentum", "Inertia", "Force", "Energy"],
       "answer": 1,
+      "answertext": "Inertia",
       "difficulty": "medium"
     },
     {
       "question": "A projectile is launched at 30 m/s at an angle of 60 degrees. What is the initial vertical component of its velocity?",
       "options": ["15 m/s", "30 m/s", "30*sin(60) m/s", "30*cos(60) m/s"],
       "answer": 2,
+      "answertext": "30*sin(60) m/s",
       "difficulty": "hard"
     },
     {
@@ -1178,18 +1319,21 @@
         "Neither"
       ],
       "answer": 2,
+      "answertext": "Both Momentum and Kinetic Energy",
       "difficulty": "hard"
     },
     {
       "question": "A 1000 kg car rounds a flat curve of radius 50 m at 10 m/s. What minimum coefficient of static friction is needed?",
       "options": ["0.1", "0.2", "0.4", "0.5"],
       "answer": 1,
+      "answertext": "0.2",
       "difficulty": "hard"
     },
     {
       "question": "A box slides down a ramp with friction. How does its final mechanical energy compare to its initial mechanical energy?",
       "options": ["Greater", "Less", "Equal", "Depends on the mass"],
       "answer": 1,
+      "answertext": "Less",
       "difficulty": "hard"
     },
     {
@@ -1201,6 +1345,7 @@
         "Angular Momentum"
       ],
       "answer": 2,
+      "answertext": "Torque",
       "difficulty": "hard"
     },
     {
@@ -1212,6 +1357,7 @@
         "Acceleration is constant"
       ],
       "answer": 1,
+      "answertext": "At maximum displacement",
       "difficulty": "hard"
     },
     {
@@ -1223,12 +1369,14 @@
         "The sum of their masses"
       ],
       "answer": 1,
+      "answertext": "The square of the distance between them",
       "difficulty": "hard"
     },
     {
       "question": "A 2kg mass on a spring (k=50 N/m) is pulled 0.1m from equilibrium and released. What is the total energy of the system?",
       "options": ["0.25 J", "0.5 J", "1 J", "5 J"],
       "answer": 0,
+      "answertext": "0.25 J",
       "difficulty": "hard"
     },
     {
@@ -1240,6 +1388,7 @@
         "It decreases by sqrt(2)"
       ],
       "answer": 2,
+      "answertext": "It increases by sqrt(2)",
       "difficulty": "hard"
     },
     {
@@ -1251,6 +1400,7 @@
         "Equal to their cross product"
       ],
       "answer": 2,
+      "answertext": "Zero",
       "difficulty": "hard"
     }
   ],
@@ -1259,24 +1409,28 @@
       "question": "Which measure describes the average value of a dataset?",
       "options": ["Median", "Mode", "Mean", "Range"],
       "answer": 2,
+      "answertext": "Mean",
       "difficulty": "easy"
     },
     {
       "question": "What is the mode of the following data: 2, 3, 4, 4, 5, 6?",
       "options": ["2", "3", "4", "5"],
       "answer": 2,
+      "answertext": "4",
       "difficulty": "easy"
     },
     {
       "question": "The difference between the maximum and minimum value is the:",
       "options": ["Variance", "Standard Deviation", "Range", "Median"],
       "answer": 2,
+      "answertext": "Range",
       "difficulty": "easy"
     },
     {
       "question": "Which measure represents the middle value in an ordered dataset?",
       "options": ["Mean", "Median", "Mode", "Range"],
       "answer": 1,
+      "answertext": "Median",
       "difficulty": "easy"
     },
     {
@@ -1288,24 +1442,28 @@
         "The variance"
       ],
       "answer": 2,
+      "answertext": "The sample size",
       "difficulty": "easy"
     },
     {
       "question": "If all values in a dataset are the same, what is the standard deviation?",
       "options": ["1", "0", "100", "Cannot be determined"],
       "answer": 1,
+      "answertext": "0",
       "difficulty": "easy"
     },
     {
       "question": "What is the mean of 10, 20, 30?",
       "options": ["10", "15", "20", "60"],
       "answer": 2,
+      "answertext": "20",
       "difficulty": "easy"
     },
     {
       "question": "A dataset with two modes is called:",
       "options": ["Unimodal", "Bimodal", "Multimodal", "No mode"],
       "answer": 1,
+      "answertext": "Bimodal",
       "difficulty": "easy"
     },
     {
@@ -1317,6 +1475,7 @@
         "Coefficient of Variation"
       ],
       "answer": 2,
+      "answertext": "Standard Deviation",
       "difficulty": "easy"
     },
     {
@@ -1328,24 +1487,28 @@
         "Data is skewed"
       ],
       "answer": 1,
+      "answertext": "No variability (all values are the same)",
       "difficulty": "easy"
     },
     {
       "question": "Find the median of the data: 5, 2, 8, 3, 9.",
       "options": ["8", "3", "5", "6"],
       "answer": 2,
+      "answertext": "5",
       "difficulty": "medium"
     },
     {
       "question": "Calculate the range of the data: 15, 22, 11, 30, 18.",
       "options": ["15", "19", "11", "30"],
       "answer": 1,
+      "answertext": "19",
       "difficulty": "medium"
     },
     {
       "question": "If the mean is 50 and the standard deviation is 5, what is the coefficient of variation?",
       "options": ["10%", "0.1%", "5%", "50%"],
       "answer": 0,
+      "answertext": "10%",
       "difficulty": "medium"
     },
     {
@@ -1357,24 +1520,28 @@
         "Mean = Mode < Median"
       ],
       "answer": 2,
+      "answertext": "Mode < Median < Mean",
       "difficulty": "medium"
     },
     {
       "question": "Find the median of the data: 10, 20, 30, 40.",
       "options": ["20", "30", "25", "Cannot be determined"],
       "answer": 2,
+      "answertext": "25",
       "difficulty": "medium"
     },
     {
       "question": "Calculate the variance for the data: 2, 4, 6. (Assume sample variance, n-1 denominator).",
       "options": ["2", "4", "8", "0"],
       "answer": 1,
+      "answertext": "4",
       "difficulty": "medium"
     },
     {
       "question": "Which measure of central tendency is most affected by outliers?",
       "options": ["Mean", "Median", "Mode", "Range"],
       "answer": 0,
+      "answertext": "Mean",
       "difficulty": "medium"
     },
     {
@@ -1386,12 +1553,14 @@
         "Average value"
       ],
       "answer": 1,
+      "answertext": "Spread of the middle 50% of data",
       "difficulty": "medium"
     },
     {
       "question": "If the variance is 16, what is the standard deviation?",
       "options": ["4", "8", "16", "256"],
       "answer": 0,
+      "answertext": "4",
       "difficulty": "medium"
     },
     {
@@ -1403,12 +1572,14 @@
         "CV is only for grouped data"
       ],
       "answer": 2,
+      "answertext": "To compare variability between datasets with different means or units",
       "difficulty": "medium"
     },
     {
       "question": "Calculate the sample standard deviation for the data: 1, 2, 3, 4, 5.",
       "options": ["sqrt(2)", "2", "sqrt(2.5)", "2.5"],
       "answer": 0,
+      "answertext": "sqrt(2.5)",
       "difficulty": "hard"
     },
     {
@@ -1420,6 +1591,7 @@
         "Bimodal"
       ],
       "answer": 1,
+      "answertext": "Positively Skewed",
       "difficulty": "hard"
     },
     {
@@ -1431,6 +1603,7 @@
         "Decreases by 5"
       ],
       "answer": 2,
+      "answertext": "Stays the same",
       "difficulty": "hard"
     },
     {
@@ -1442,6 +1615,7 @@
         "Multiplies by sqrt(2)"
       ],
       "answer": 2,
+      "answertext": "Multiplies by 4",
       "difficulty": "hard"
     },
     {
@@ -1453,18 +1627,21 @@
         "Cannot be determined"
       ],
       "answer": 1,
+      "answertext": "Dataset B",
       "difficulty": "hard"
     },
     {
       "question": "Estimate the mode using the empirical relationship for a distribution where Mean=70 and Median=68.",
       "options": ["64", "66", "72", "74"],
       "answer": 0,
+      "answertext": "64",
       "difficulty": "hard"
     },
     {
       "question": "Calculate the weighted mean: 3 credits at 4 points, 4 credits at 3 points, 2 credits at 1 point.",
       "options": ["2.89", "3.00", "2.67", "3.11"],
       "answer": 0,
+      "answertext": "2.89",
       "difficulty": "hard"
     },
     {
@@ -1476,18 +1653,21 @@
         "It only applies to grouped data"
       ],
       "answer": 2,
+      "answertext": "To provide an unbiased estimate of the population variance",
       "difficulty": "hard"
     },
     {
       "question": "Find the approximate mean for grouped data: Class 10-20 (Freq 5, Midpt 15), Class 20-30 (Freq 10, Midpt 25).",
       "options": ["20", "21.67", "22.5", "25"],
       "answer": 1,
+      "answertext": "21.67",
       "difficulty": "hard"
     },
     {
       "question": "If the Coefficient of Variation is 20% and the standard deviation is 8, what is the mean?",
       "options": ["1.6", "4", "40", "160"],
       "answer": 2,
+      "answertext": "40",
       "difficulty": "hard"
     }
   ]

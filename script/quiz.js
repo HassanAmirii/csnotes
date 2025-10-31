@@ -98,10 +98,32 @@ document.addEventListener("DOMContentLoaded", (e) => {
       }
       renderQuestion();
 
+      // update questions for user observation / correction purpose
+
+      const getThemQuestions = loadQuestion;
+      // refine questions
+      const refineQuestions = getThemQuestions
+        .map(function (item, index) {
+          return `<p>Question ${
+            index + 1
+          }: ${item.question} answer: ${item.answertext}</p>`;
+        })
+        .join(" ");
+      console.log(refineQuestions);
+
       // submit functionality
       quizForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        app.innerHTML = `<p>you are finished</p><p>you got ${quizScore}/ ${loadQuestion.length}</p>`;
+        app.innerHTML = `<p>Quiz succesfully submitted, you got ${quizScore}/ ${loadQuestion.length}</p>
+
+        <br>
+        <p>REVIEW TO CHECK MISSED QUESTIONS</p>
+        ${refineQuestions}
+
+        
+        
+        
+        `;
       });
 
       quizForm.addEventListener("click", (event) => {
