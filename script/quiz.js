@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         .map(function (item, index) {
           return `<p>Question ${
             index + 1
-          }: ${item.question} answer: ${item.answertext}</p>`;
+          }: ${item.question}     <br> answer: ${item.answertext}</p>`;
         })
         .join(" ");
       console.log(refineQuestions);
