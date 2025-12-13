@@ -99,75 +99,235 @@
       <header>
         <h1>STA111: Statistical Inference</h1>
         <p>
-          An outline covering the foundational concepts of descriptive
-          statistics and data summary.
+          An outline covering the foundational concepts of descriptive statistics
+          , data organization, and basic probability.
         </p>
       </header>
 
       <main>
-        <section id="module1" class="module">
-          <h2>Module 1: Numerical Summary of Data</h2>
+        <section id="module1_intro" class="module">
+          <h2>Module 1: Introduction to Statistics and Data</h2>
+          <p>
+            This module covers the basic definitions and types of data/variables,
+            which form the bedrock of the course.
+          </p>
           <ul>
             <li>
-              <strong>Introduction to Descriptive Statistics:</strong>
+              <strong>Statistical Concepts and Definitions:</strong>
               <ul>
                 <li>
-                  Understanding the need for quantitative measures to summarize
-                  data sets.
-                </li>
-                <li>Symbolic representation of data (x1, x2, ..., xn).</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Measures of Location (Central Tendency):</strong>
-              <ul>
-                <li>
-                  <strong>Mean:</strong> The average of a data set (for both
-                  grouped and ungrouped data).
+                  <strong>Types of Statistics:</strong> Descriptive vs.
+                  <strong>Inferential Statistics</strong> (making decisions about
+                  a population based on sample results).
                 </li>
                 <li>
-                  <strong>Median:</strong> The middle value of an ordered data
-                  set.
-                </li>
-                <li>
-                  <strong>Mode:</strong> The most frequently occurring value in
-                  a data set.
-                </li>
-                <li>
-                  Relationship between Mean, Median, and Mode for symmetrical
-                  and skewed distributions.
+                  <strong>Core Properties:</strong> Understanding that the sample
+                  mean is a statistic and a portion of the population.
                 </li>
               </ul>
             </li>
             <li>
-              <strong>Measures of Dispersion (Variability):</strong>
+              <strong>Types of Data and Variables:</strong>
+              <ul>
+                <li><strong>Types of Data:</strong> Primary Data vs. Secondary Data.</li>
+                <li>
+                  <strong>Types of Variables:</strong> Discrete Variable (and implicitly Continuous Variable).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Data Collection Methods:</strong> E.g., Questionnaire Survey Method.
+            </li>
+          </ul>
+        </section>
+
+        <section id="module2" class="module">
+          <h2>Module 2: Data Organization and Frequency Distributions</h2>
+          <p>
+            This module focuses on arranging raw data into a more manageable
+            format for analysis.
+          </p>
+          <ul>
+            <li>
+              <strong>Data Organization:</strong>
+              <ul>
+                <li><strong>Arrayed Data:</strong> Listing data in order.</li>
+                <li>
+                  <strong>Stem and Leaf Plot:</strong> Creating and interpreting
+                  a stem and leaf display.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Frequency Distributions:</strong> 
+              <ul>
+                <li>
+                  <strong>Frequency Table Components:</strong>
+                  <ul>
+                    <li>Class Mark (midpoint of class limits)</li>
+                    <li>Lower Class Boundary</li>
+                    <li>Frequency and Cumulative Frequency (CF)</li>
+                    <li>Relative Frequency (RF) and Cumulative Relative Frequency (CRF)</li>
+                    <li>Modal Class (the class with the highest frequency)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="module3" class="module">
+          <h2>Module 3: Measures of Location (Central Tendency)</h2>
+          <p>
+            This module is critical and focuses on finding the "center" or
+            average of a dataset.
+          </p>
+          <ul>
+            <li>
+              <strong>Mean:</strong> Calculating the arithmetic mean for both raw
+              and grouped data.
+              <ul>
+                <li>
+                  <strong>Mean Deviation Property:</strong> The algebraic sum of
+                  deviations from the mean is zero: $\sum_{i=1}^n (x_i - \bar{x}) = 0$.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Median:</strong> Determining the middle value (position and
+              calculation for odd/even number of observations).
+            </li>
+            <li>
+              <strong>Mode:</strong> Identifying the most frequently occurring value.
+            </li>
+          </ul>
+        </section>
+
+        <section id="module4" class="module">
+          <h2>Module 4: Measures of Dispersion (Spread)</h2>
+          <p>
+            This module is about quantifying the spread or variability within the
+            data.
+          </p>
+          <ul>
+            <li>
+              <strong>Absolute Measures of Dispersion:</strong>
               <ul>
                 <li>
                   <strong>Range:</strong> The difference between the highest and
                   lowest values.
                 </li>
                 <li>
-                  <strong>Inter-Quartile Range:</strong> The range of the middle
-                  50% of the data.
+                  <strong>Mean Deviation (MD):</strong> The average of the
+                  absolute deviations from the mean.
                 </li>
                 <li>
-                  <strong>Variance:</strong> The average of the squared
-                  differences from the Mean.
+                  <strong>Variance:</strong> The square of the standard
+                  deviation.
                 </li>
                 <li>
-                  <strong>Standard Deviation:</strong> The square root of the
-                  variance, measuring the typical spread of data points.
+                  <strong>Standard Deviation (S):</strong> Calculation and
+                  interpretation of the most common measure of spread.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Relative Measures of Dispersion:</strong>
+              <ul>
+                <li>
+                  <strong>Coefficient of Variation (CV):</strong> $\text{CV} = (S / \bar{x}) \times 100$. Used for comparing variability between two or more datasets (unit-free).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Properties:</strong> Measures of dispersion are always
+              positive/never negative.
+            </li>
+          </ul>
+        </section>
+
+        <section id="module5" class="module">
+          <h2>Module 5: Measures of Location and Distribution Shape</h2>
+          <p>
+            This module deals with dividing the dataset into equal parts and
+            describing the symmetry (or lack thereof) of the distribution.
+          </p>
+          <ul>
+            <li>
+              <strong>Measures of Location and Position (Quantiles):</strong>
+              <p>
+                *Note: These are measurements that divide observations into equal
+                parts.
+              </p>
+              <ul>
+                <li>
+                  <strong>Quartiles:</strong>
+                  <ul>
+                    <li>Lower Quartile ($Q_1$)</li>
+                    <li>Upper Quartile ($Q_3$)</li>
+                    <li>Inter Quartile Range (IQR) = $Q_3 - Q_1$</li>
+                  </ul>
                 </li>
                 <li>
-                  <strong>Coefficient of Variation (CV):</strong> A relative
-                  measure of dispersion, used for comparing the variability of
-                  different data sets.
+                  <strong>Percentiles:</strong> Calculating $P_{25}$, $P_{50}$
+                  (which is the Median), and $P_{75}$.
                 </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Skewness:</strong> 
+              <ul>
+                <li>
+                  <strong>Types of Skewness:</strong>
+                  <ul>
+                    <li>
+                      <strong>Negatively Skewed Distribution:</strong> Mean <
+                      Median < Mode (tail to the left).
+                    </li>
+                    <li>
+                      <strong>Positively Skewed Distribution:</strong> Mean >
+                      Median > Mode (tail to the right).
+                    </li>
+                  </ul>
+                </li>
+                <li><strong>Coefficient of Skewness.</strong></li>
               </ul>
             </li>
           </ul>
         </section>
-      </main>
-    </div>
-  </body>
-</html>
+
+        <section id="module6" class="module">
+          <h2>Module 6: Basic Probability</h2>
+          <p>
+            This module introduces the rules and methods for calculating the
+            likelihood of events.
+          </p>
+          <ul>
+            <li>
+              <strong>Calculating Probability:</strong> Ratio of required outcomes
+              to total possible outcomes: $P(E) = \text{Number of Favorable Outcomes} / \text{Total Possible Outcomes}$.
+            </li>
+            <li>
+              <strong>Rules of Probability:</strong>
+              <ul>
+                <li>
+                  <strong>Mutually Exclusive Events:</strong> $P(A \cap B) = 0$.
+                </li>
+                <li>
+                  <strong>Independent Events:</strong> Calculating the probability of multiple independent events occurring.
+                </li>
+                <li>
+                  <strong>"At Least One":</strong> Solving problems involving the
+                  probability of "at least one" event.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Contingency Tables:</strong> Working with Joint and Marginal
+              Probabilities in a table format. 
+            </li>
+          </ul>
+        </main>
+      </div>
+    </body>
+  </html>
