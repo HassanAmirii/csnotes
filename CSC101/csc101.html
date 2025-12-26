@@ -95,7 +95,7 @@
         border-radius: 8px;
         padding: 1.5em 2em;
         margin-bottom: 2em;
-        scroll-margin-top: 2em; /* Offset for in-page links */
+        scroll-margin-top: 2em;
       }
 
       .module h2 {
@@ -125,8 +125,8 @@
       <header>
         <h1>CSC101: Internet Technology & Programming I</h1>
         <p>
-          An outline of computer networks, internet technologies, and the
-          fundamentals of web markup languages.
+          An outline of computer networks, internet technologies, web design
+          principles, and numerical systems.
         </p>
       </header>
 
@@ -134,12 +134,19 @@
         <h2>Table of Contents</h2>
         <ul class="toc-list">
           <li>
-            <a href="#module1">Module 1: Computer Network Fundamentals</a>
+            <a href="#module1"
+              >Module 1: Computer Network Fundamentals & OSI Model</a
+            >
           </li>
           <li>
-            <a href="#module2">Module 2: The Internet and World Wide Web</a>
+            <a href="#module2"
+              >Module 2: The Internet, WWW & Web Design Process</a
+            >
           </li>
-          <li><a href="#module3">Module 3: Markup Languages & HTML</a></li>
+          <li>
+            <a href="#module3">Module 3: HTML Basics, Tables, and Forms</a>
+          </li>
+          <li><a href="#module4">Module 4: Number Systems</a></li>
         </ul>
       </section>
 
@@ -148,157 +155,106 @@
           <h2>Module 1: Computer Network Fundamentals</h2>
           <ul>
             <li>
-              <strong>Basic Concepts:</strong> Definition of a computer network,
-              nodes, and links.
+              <strong>Basic Principles:</strong> Nodes, links, and data
+              transmission.
+            </li>
+            <li><strong>Protocols:</strong> TCP/IP, HTTP, and FTP.</li>
+            <li>
+              <strong>Network Topology:</strong> Bus, Star, Ring, and Mesh.
             </li>
             <li>
-              <strong>Key Terminology:</strong>
-              <ul>
-                <li>
-                  <strong>Protocol:</strong> Rules for data transmission (e.g.,
-                  TCP/IP, HTTP).
-                </li>
-                <li>
-                  <strong>Topology:</strong> Physical and logical arrangement of
-                  a network (e.g., Bus, Star, Ring, Mesh).
-                </li>
-                <li>
-                  <strong>IP Address:</strong> Unique numerical identifier for a
-                  device on a network.
-                </li>
-                <li>
-                  <strong>DNS:</strong> Domain Name System, translates domain
-                  names to IP addresses.
-                </li>
-                <li>
-                  <strong>Firewall:</strong> A security device for monitoring
-                  and controlling network traffic.
-                </li>
-              </ul>
+              <strong>Addressing & Security:</strong> IP Address, DNS, and
+              Firewall.
             </li>
             <li>
-              <strong>Types of Computer Networks:</strong>
-              <ul>
-                <li>
-                  <strong>LAN (Local Area Network):</strong> Covers a small area
-                  like an office or home.
-                </li>
-                <li>
-                  <strong>WAN (Wide Area Network):</strong> Covers a large
-                  geographical area, connecting LANs.
-                </li>
-                <li>
-                  <strong>Cloud Networks:</strong> On-demand networks hosted by
-                  service providers.
-                </li>
-              </ul>
+              <strong>Network Types:</strong> LAN, WAN, and Cloud Networks.
             </li>
             <li>
-              <strong>Network Architecture:</strong>
-              <ul>
-                <li>
-                  <strong>Client-Server:</strong> Central server manages client
-                  nodes.
-                </li>
-                <li>
-                  <strong>Peer-to-Peer (P2P):</strong> No central server; every
-                  node can act as a client or server.
-                </li>
-              </ul>
+              <strong>Architecture:</strong> Client-Server vs. Peer-to-Peer
+              (P2P).
             </li>
             <li>
-              <strong>The OSI Model:</strong> The 7 layers of network
-              communication (Physical, Data Link, Network, Transport, Session,
-              Presentation, Application).
+              <strong>The OSI Model:</strong> Seven layers of network
+              communication.
             </li>
           </ul>
         </section>
 
         <section id="module2" class="module">
-          <h2>Module 2: The Internet and World Wide Web</h2>
+          <h2>Module 2: The Internet, WWW & Web Design Process</h2>
           <ul>
             <li>
-              <strong>Definition of the Internet:</strong> A global,
-              decentralized "network of networks".
+              <strong>The Internet:</strong> History (ARPANET), advantages, and
+              disadvantages.
             </li>
             <li>
-              <strong>History of the Internet:</strong> From ARPANET (1960s) to
-              TCP/IP and the modern web.
+              <strong>Internet vs. WWW:</strong> Infrastructure vs. Information
+              service.
             </li>
             <li>
-              <strong>Uses of the Internet:</strong> E-commerce, Cashless
-              Transactions, Education, Social Networking, Entertainment.
+              <strong>Web Design Process:</strong> The three stages: Discovery,
+              Design, and Development.
             </li>
             <li>
-              <strong>Security & Privacy:</strong> Understanding risks (hacking,
-              data breaches) and protection steps (antivirus, strong passwords,
-              VPNs).
-            </li>
-            <li>
-              <strong>World Wide Web (WWW):</strong> A service that runs on the
-              internet to provide access to web pages and applications.
-            </li>
-            <li>
-              <strong>Key Differences:</strong> Internet is the
-              hardware/infrastructure; WWW is the software/information service
-              that uses it.
-            </li>
-            <li>
-              <strong>WWW Architecture:</strong> Components include Clients
-              (browsers), Servers, URL, HTTP/HTTPS, and HTML.
+              <strong>Design Principles:</strong> Simplicity, Visual Hierarchy,
+              Consistency, Accessibility, and Responsiveness.
             </li>
           </ul>
         </section>
 
         <section id="module3" class="module">
-          <h2>Module 3: Markup Languages & HTML</h2>
+          <h2>Module 3: HTML Basics, Tables, and Forms</h2>
           <ul>
             <li>
-              <strong>Definition of a Markup Language:</strong> A system for
-              annotating a document to define its structure and presentation.
+              <strong>Document Structure:</strong>
+              <code>&lt;!DOCTYPE&gt;</code>, <code>&lt;html&gt;</code>,
+              <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>.
             </li>
             <li>
-              <strong>HTML (HyperText Markup Language):</strong> The standard
-              language for creating web pages.
+              <strong>Basic Elements:</strong> Headings (H1-H6), Paragraphs (P),
+              and Line Breaks (BR).
             </li>
             <li>
-              <strong>Basic HTML Structure & Tags:</strong> html, head, body,
-              title, h1-h6, p, etc.
+              <strong>List Types:</strong> Unordered (UL), Ordered (OL), and
+              Description Lists (DL).
             </li>
             <li>
-              <strong>Key Elements:</strong>
+              <strong>HTML Images:</strong> <code>&lt;img&gt;</code> attributes
+              (src, alt, width, height, style, title). Illustrative vs.
+              Background images.
+            </li>
+            <li>
+              <strong>Tables:</strong> <code>&lt;table&gt;</code>,
+              <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>,
+              <code>&lt;th&gt;</code>. Attributes: COLSPAN, ROWSPAN, BORDER.
+            </li>
+            <li>
+              <strong>Forms:</strong> <code>&lt;form&gt;</code> (action, method)
+              and <code>&lt;input&gt;</code> types (text, radio, checkbox,
+              password).
+            </li>
+          </ul>
+        </section>
+
+        <section id="module4" class="module">
+          <h2>Module 4: Number Systems</h2>
+          <ul>
+            <li>
+              <strong>Numerical Concepts:</strong> Understanding positional
+              notation.
+            </li>
+            <li>
+              <strong>Primary Systems:</strong>
               <ul>
-                <li><strong>Anchor Tag (a):</strong> Creates hyperlinks.</li>
-                <li>
-                  <strong>Lists (ul, ol, li):</strong> Creates bulleted or
-                  numbered lists.
-                </li>
-                <li>
-                  <strong>Tables (table, tr, th, td):</strong> Organizes data in
-                  rows and columns.
-                </li>
-                <li><strong>Image Tag (img):</strong> Embeds images.</li>
-                <li>
-                  <strong>Forms (form, input):</strong> Collects user input.
-                </li>
+                <li><strong>Decimal:</strong> Base 10</li>
+                <li><strong>Binary:</strong> Base 2</li>
+                <li><strong>Octal:</strong> Base 8</li>
+                <li><strong>Hexadecimal:</strong> Base 16</li>
               </ul>
             </li>
             <li>
-              <strong>Physical vs. Logical Tags:</strong>
-              <ul>
-                <li>
-                  <strong>Physical Tags (e.g., b, i):</strong> Define visual
-                  appearance. (Considered outdated).
-                </li>
-                <li>
-                  <strong>Logical Tags (e.g., strong, em):</strong> Define
-                  semantic meaning or structure. (Modern best practice).
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>Other Markup Languages:</strong> A brief overview of XML,
-              XHTML, and SGML.
+              <strong>Conversion:</strong> Methods for converting values between
+              Decimal, Binary, Octal, and Hexadecimal systems.
             </li>
           </ul>
         </section>
